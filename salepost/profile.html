@@ -34,41 +34,23 @@
     <div class="wrapper">
 
        <!--start to header-->
-       <header class="top-header fixed-top border-bottom d-flex align-items-center">
+       <header class="top-header-other fixed-top border-bottom d-flex align-items-center">
         <nav class="navbar navbar-expand w-100 p-0 gap-3 align-items-center">
-          <div class="nav-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidenav"><a href="javascript:;"><i class="bi bi-list"></i></a></div>
+ 
             <div class="nav-button" onclick="history.back()"><a href="javascript:;"><i class="bi bi-arrow-left"></i></a></div>
-            <div class="account-profile-2">
-              <h6 class="mb-0 fw-bold text-dark">Profile</h6>
+            <div class="shop-Cart">
+              <h4 class="mb-0 fw-bold text-dark">My Profile</h4>
             </div>
-            <form class="searchbar">
-              <div class="position-absolute top-50 translate-middle-y search-icon start-0 ms-4"><i class="bi bi-search"></i></div>
-              <input class="form-control px-5" type="text" placeholder="Search for anything">
-              <div class="position-absolute top-50 translate-middle-y end-0 search-close-icon me-4"><i class="bi bi-x-lg"></i></div>
-            </form>
-            <ul class="navbar-nav ms-auto d-flex align-items-center top-right-menu">
-              <li class="nav-item mobile-search-button">
-                <a class="nav-link" href="javascript:;"><i class="bi bi-search"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="wishlist.html"><i class="bi bi-heart"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link position-relative" href="cart.html">
-                  <div class="cart-badge">8</div>
-                  <i class="bi bi-bag"></i>
-                </a>
-              </li>
-            </ul>
+      
         </nav>
-       </header>
+      </header>
         <!--end to header-->
 
       <!--start to page content-->
        <div class="page-content">
 
         <div class="profile-img mb-3 border p-3 text-center rounded-3 bg-light">
-           <img src="https://via.placeholder.com/110X110" width="90" height="90" class="rounded-circle" alt="">
+           <img src="assets/images/avatars/01.webp" width="90" height="90" class="rounded-circle" alt="">
            <h6 class="mb-0 fw-bold mt-3">Michael Clarke</h6>
         </div>
 
@@ -78,7 +60,21 @@
           <div class="card-body py-2">
               <div class="d-flex align-items-center gap-3 fs-6">
                  <div><i class="bi bi-person"></i></div>
-                 <div class="flex-grow-1">My Profile</div>
+                 <div class="flex-grow-1">Personal Information</div>
+                 <div><i class="bi bi-chevron-right"></i></div>
+              </div>
+          </div>
+         </div>
+        </a>
+       </div>
+
+       <div class="mb-3">
+        <a class="profile-item" href="authentication-change-password.html">
+         <div class="card rounded-3">
+          <div class="card-body py-2">
+              <div class="d-flex align-items-center gap-3 fs-6">
+                 <div><i class="bi bi-person"></i></div>
+                 <div class="flex-grow-1">Change Password</div>
                  <div><i class="bi bi-chevron-right"></i></div>
               </div>
           </div>
@@ -92,7 +88,21 @@
           <div class="card-body py-2">
               <div class="d-flex align-items-center gap-3 fs-6">
                  <div><i class="bi bi-basket3"></i></div>
-                 <div class="flex-grow-1">My Order</div>
+                 <div class="flex-grow-1">My Orders</div>
+                 <div><i class="bi bi-chevron-right"></i></div>
+              </div>
+          </div>
+         </div>
+        </a>
+       </div>
+
+       <div class="mb-3">
+        <a class="profile-item" href="order-tracking.html">
+         <div class="card rounded-3">
+          <div class="card-body py-2">
+              <div class="d-flex align-items-center gap-3 fs-6">
+                 <div><i class="bi bi-basket3"></i></div>
+                 <div class="flex-grow-1">Track Orders</div>
                  <div><i class="bi bi-chevron-right"></i></div>
               </div>
           </div>
@@ -227,7 +237,7 @@
                  <ul>
                    <li><a href="profile.html">Profile</a></li>
                    <li><a href="my-orders.html">My Orders</a></li>
-                   <li><a href="my-profile.html">My Profile</a></li>
+                   <li><a href="my-profile.html">Personal Information</a></li>
                    <li><a href="addresses.html">Addresses</a></li>
                    <li><a href="notification.html">Notification</a></li>
                  </ul>

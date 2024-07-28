@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Synrok - Mobile HTML Template</title>
+    <title>SalePost- Mobile Version</title>
 
     <!-- Plugins -->
     <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/metisMenu.min.css" />
@@ -34,32 +34,14 @@
     <div class="wrapper">
 
        <!--start to header-->
-       <header class="top-header fixed-top border-bottom d-flex align-items-center">
+       <header class="top-header-other fixed-top border-bottom d-flex align-items-center">
         <nav class="navbar navbar-expand w-100 p-0 gap-3 align-items-center">
-          <div class="nav-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidenav"><a href="javascript:;"><i class="bi bi-list"></i></a></div>
+ 
             <div class="nav-button" onclick="history.back()"><a href="javascript:;"><i class="bi bi-arrow-left"></i></a></div>
             <div class="shop-Cart">
-              <h6 class="mb-0 fw-bold text-dark">Cart</h6>
+              <h4 class="mb-0 fw-bold text-dark">My Cart</h4>
             </div>
-            <form class="searchbar">
-              <div class="position-absolute top-50 translate-middle-y search-icon start-0 ms-4"><i class="bi bi-search"></i></div>
-              <input class="form-control px-5" type="text" placeholder="Search for anything">
-              <div class="position-absolute top-50 translate-middle-y end-0 search-close-icon me-4"><i class="bi bi-x-lg"></i></div>
-            </form>
-            <ul class="navbar-nav ms-auto d-flex align-items-center top-right-menu">
-              <li class="nav-item mobile-search-button">
-                <a class="nav-link" href="javascript:;"><i class="bi bi-search"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="wishlist.html"><i class="bi bi-heart"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link position-relative" href="cart.html">
-                  <div class="cart-badge">8</div>
-                  <i class="bi bi-bag"></i>
-                </a>
-              </li>
-            </ul>
+      
         </nav>
        </header>
         <!--end to header-->
@@ -71,11 +53,12 @@
        <!--start cart list-->
          <div class="cart-list d-flex flex-column gap-4">
 
-          <div class="card rounded-3 overflow-hidden">
+          <div class="card rounded-3 border-0 overflow-hidden">
+            <i class="bi bi-x cart-remove-icon float-right"></i>
             <div class="card-body">
               <div class="d-flex flex-row align-items-start align-items-stretch gap-3">
                <div class="product-img">
-                  <img src="https://via.placeholder.com/540X600" class="rounded-3" width="100" alt="">
+                <img src="assets/images/trending-shoes/01.webp" class="rounded-3" width="100" alt="">
                </div>
                 <div class="product-info flex-grow-1">
                   <h6 class="fw-bold mb-0 text-dark">Checked Kurta</h6>
@@ -91,24 +74,27 @@
                </div>
               </div>
             </div>
-            <div class="card-footer bg-transparent p-0">
+       
+            <!-- <div class="card-footer bg-transparent p-0">
               <div class="d-flex align-items-center justify-content-between">
                 <div class="d-grid flex-fill">
-                  <button class="btn btn-ecomm">Remove</button>
+                  <button class="btn btn-ecomm-shop">Remove</button>
                 </div>
                 <div class="vr"></div>
                 <div class="d-grid flex-fill">
-                  <button class="btn btn-ecomm">Move To Wishlist</button>
+                  <button class="btn btn-ecomm-shop">Move To Wishlist</button>
                 </div>
               </div>
-            </div>
+            </div> -->
+          <hr>
           </div>
 
-          <div class="card rounded-3 overflow-hidden">
+          <div class="card rounded-3 border-0 overflow-hidden">
+            <i class="bi bi-x cart-remove-icon float-right"></i>
             <div class="card-body">
               <div class="d-flex flex-row align-items-start align-items-stretch gap-3">
                <div class="product-img">
-                  <img src="https://via.placeholder.com/540X600" class="rounded-3" width="100" alt="">
+                <img src="assets/images/trending-shoes/02.webp" class="rounded-3" width="100" alt="">
                </div>
                 <div class="product-info flex-grow-1">
                   <h6 class="fw-bold mb-0 text-dark">Checked Kurta</h6>
@@ -124,24 +110,27 @@
                </div>
               </div>
             </div>
-            <div class="card-footer bg-transparent p-0">
+       
+            <!-- <div class="card-footer bg-transparent p-0">
               <div class="d-flex align-items-center justify-content-between">
                 <div class="d-grid flex-fill">
-                  <button class="btn btn-ecomm">Remove</button>
+                  <button class="btn btn-ecomm-shop">Remove</button>
                 </div>
                 <div class="vr"></div>
                 <div class="d-grid flex-fill">
-                  <button class="btn btn-ecomm">Move To Wishlist</button>
+                  <button class="btn btn-ecomm-shop">Move To Wishlist</button>
                 </div>
               </div>
-            </div>
+            </div> -->
+            <hr>
           </div>
 
-          <div class="card rounded-3 overflow-hidden">
+          <div class="card rounded-3 border-0 overflow-hidden">
+            <i class="bi bi-x cart-remove-icon float-right"></i>
             <div class="card-body">
               <div class="d-flex flex-row align-items-start align-items-stretch gap-3">
                <div class="product-img">
-                  <img src="https://via.placeholder.com/540X600" class="rounded-3" width="100" alt="">
+                  <img src="assets/images/trending-shoes/03.webp" class="rounded-3" width="100" alt="">
                </div>
                 <div class="product-info flex-grow-1">
                   <h6 class="fw-bold mb-0 text-dark">Checked Kurta</h6>
@@ -157,101 +146,50 @@
                </div>
               </div>
             </div>
-            <div class="card-footer bg-transparent p-0">
+       
+            <!-- <div class="card-footer bg-transparent p-0">
               <div class="d-flex align-items-center justify-content-between">
                 <div class="d-grid flex-fill">
-                  <button class="btn btn-ecomm">Remove</button>
+                  <button class="btn btn-ecomm-shop">Remove</button>
                 </div>
                 <div class="vr"></div>
                 <div class="d-grid flex-fill">
-                  <button class="btn btn-ecomm">Move To Wishlist</button>
+                  <button class="btn btn-ecomm-shop">Move To Wishlist</button>
                 </div>
               </div>
-            </div>
+            </div> -->
+            <hr>
           </div>
+ 
 
-          <div class="card rounded-3 overflow-hidden">
-            <div class="card-body">
-              <div class="d-flex flex-row align-items-start align-items-stretch gap-3">
-               <div class="product-img">
-                  <img src="https://via.placeholder.com/540X600" class="rounded-3" width="100" alt="">
-               </div>
-                <div class="product-info flex-grow-1">
-                  <h6 class="fw-bold mb-0 text-dark">Checked Kurta</h6>
-                  <div class="product-price d-flex align-items-center gap-2 mt-2">
-                    <div class="fw-bold text-dark">$458</div>
-                    <div class="fw-light text-muted text-decoration-line-through">$2089</div>
-                    <div class="fw-bold text-danger">(70% off)</div>
-                  </div>
-                   <div class="mt-2 hstack gap-2">
-                     <button type="button" class="btn btn-sm btn-light rounded-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSize">Size : M</button>
-                     <button type="button" class="btn btn-sm btn-light rounded-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasQty">Qty : 1</button>
-                  </div>
-               </div>
-              </div>
-            </div>
-            <div class="card-footer bg-transparent p-0">
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="d-grid flex-fill">
-                  <button class="btn btn-ecomm">Remove</button>
-                </div>
-                <div class="vr"></div>
-                <div class="d-grid flex-fill">
-                  <button class="btn btn-ecomm">Move To Wishlist</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card rounded-3 overflow-hidden">
-            <div class="card-body">
-              <div class="d-flex flex-row align-items-start align-items-stretch gap-3">
-               <div class="product-img">
-                  <img src="https://via.placeholder.com/540X600" class="rounded-3" width="100" alt="">
-               </div>
-                <div class="product-info flex-grow-1">
-                  <h6 class="fw-bold mb-0 text-dark">Checked Kurta</h6>
-                  <div class="product-price d-flex align-items-center gap-2 mt-2">
-                    <div class="fw-bold text-dark">$458</div>
-                    <div class="fw-light text-muted text-decoration-line-through">$2089</div>
-                    <div class="fw-bold text-danger">(70% off)</div>
-                  </div>
-                   <div class="mt-2 hstack gap-2">
-                     <button type="button" class="btn btn-sm btn-light rounded-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSize">Size : M</button>
-                     <button type="button" class="btn btn-sm btn-light rounded-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasQty">Qty : 1</button>
-                  </div>
-               </div>
-              </div>
-            </div>
-            <div class="card-footer bg-transparent p-0">
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="d-grid flex-fill">
-                  <button class="btn btn-ecomm">Remove</button>
-                </div>
-                <div class="vr"></div>
-                <div class="d-grid flex-fill">
-                  <button class="btn btn-ecomm">Move To Wishlist</button>
-                </div>
-              </div>
-            </div>
-          </div>
+    
 
          </div><!--end cart list-->
 
 
          <!--start invoice summery-->
-         <div class="card rounded-3 my-3">
-          <div class="card-body">
+         <div class="card border-0 rounded-3 my-3">
+          <!-- <div class="card-body"> -->
             <h5 class="fw-bold mb-3 text-dark">Apply Coupon</h5>
             <form>
               <div class="mb-3">
-                <input type="email" class="form-control rounded-3" id="ApplyCouponCode" placeholder="Enter Coupon Code">
+
+                <div class="coupon-input-container">
+                  <div class="coupon-input-bar">
+                    <input type="email" class="form-control rounded-3" id="ApplyCouponCode" placeholder="Enter Coupon Code">
+                  </div>
+          
+                  <i class="bi bi-plus apply-icon"></i>
+          
+                </div>
               </div>
-              <div class="mb-0 d-grid">
+              <!-- <div class="mb-0 d-grid">
                 <button class="btn btn-dark btn-ecomm rounded-3">Apply</button>
-              </div>
+              </div> -->
             </form>
-           </div>
+
+           <!-- </div> -->
+
           </div>
          <div class="card rounded-3">
           <div class="card-body">
@@ -287,11 +225,11 @@
        <footer class="page-footer fixed-bottom border-top d-flex align-items-center px-0">
           <div class="hstack align-items-center justify-content-center w-100 align-items-stretch">
               <div class="short-by w-100 d-flex align-items-center justify-content-center">
-                  <a href="shop.html" class="btn btn-ecomm">Continue Shopping</a>
+                  <a href="shop.html" class="btn bg-light btn-ecomm-shop">Continue Shopping</a>
               </div>
               <div class="vr"></div>
-              <div class="filter-btn bg-dark w-100 d-flex align-items-center justify-content-center">
-                <a href="checkout.html" class="btn btn-ecomm text-white">Checkout</a>
+              <div class="filter-btn bg-default w-100 d-flex align-items-center justify-content-center">
+                <a href="checkout.html" class="btn btn-ecomm-shop text-white">Checkout</a>
               </div>
           </div>
        </footer>

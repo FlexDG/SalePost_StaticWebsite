@@ -54,9 +54,9 @@ $(document).ready(function(){
 $(document).ready(function(){
 
   $('.banner-slider-2').slick({
-     dots: true,
+     dots: false,
      arrows: false,
-     infinite: true,
+     infinite: false,
      speed: 300,
      slidesToShow: 1,
      slidesToScroll: 1,
