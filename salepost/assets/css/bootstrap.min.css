@@ -2463,10 +2463,10 @@ textarea.form-control-lg {
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	user-select: none;
-	border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
-	border-radius: var(--bs-btn-border-radius);
+	/* border: var(--bs-btn-border-width) solid var(--bs-btn-border-color); */
+	border-radius: var(--bs-btn-border-radius); 
 	background-color: var(--bs-btn-bg);
-	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+	/* transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out */
 }
 @media (prefers-reduced-motion:reduce) {
 	.btn {
@@ -6815,6 +6815,11 @@ textarea.form-control-lg {
 .mt-3 {
 	margin-top: 1rem!important
 }
+
+.mt-3-5 {
+	margin-top: 1.3rem!important
+}
+
 .mt-4 {
 	margin-top: 1.5rem!important
 }
@@ -6831,6 +6836,14 @@ textarea.form-control-lg {
 
 .mt-10{
 	margin-top: 11.5rem!important
+}
+
+.mt-custom-1 {
+	margin-top: 1rem!important
+}
+
+.mt-custom-2 {
+	margin-top: 0.65rem!important
 }
 
 
@@ -6855,6 +6868,11 @@ textarea.form-control-lg {
 .me-5 {
 	margin-right: 3rem!important
 }
+
+.me-rev {
+	margin-left: -2.5rem!important
+}
+
 .me-auto {
 	margin-right: auto!important
 }
@@ -6906,6 +6924,10 @@ textarea.form-control-lg {
 .ms-6 {
 	margin-left: 4rem!important
 }
+.ms-7 {
+	margin-right: -0.4rem!important
+}
+
 
 .ms-auto {
 	margin-left: auto!important
