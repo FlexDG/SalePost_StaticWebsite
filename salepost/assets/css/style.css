@@ -588,6 +588,17 @@ h6 {
     background-color: rgb(248, 78, 40);
 }
 
+.btn-ecomm-signup {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0;
+    z-index: 6;
+    width: 24em;
+    border: 0.8px solid #fff;
+}
+
 .btn-ecomm-more {
     font-size: 13px;
     font-weight: 500;
