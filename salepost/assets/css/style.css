@@ -1210,8 +1210,8 @@ h6 {
 
 .deals-title {
     position: absolute;
-    left: 0;
-    margin-left: 8.4rem;
+    right: 0;
+    margin-right: 12.5rem;
     margin-top: -3rem;
 }
 
