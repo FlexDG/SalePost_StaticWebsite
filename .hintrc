@@ -21,6 +21,12 @@
       {
         "duplicate-id-aria": "off"
       }
+    ],
+    "axe/aria": [
+      "default",
+      {
+        "aria-required-children": "off"
+      }
     ]
   },
   "browserslist": [

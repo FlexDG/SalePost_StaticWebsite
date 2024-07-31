@@ -612,11 +612,27 @@ h6 {
     font-weight: 600;
     padding: 0.8rem 1.5rem;
     border-radius: 0;
+    text-transform: uppercase;
     z-index: 6;
     width: 24em;
     background-color: rgb(248, 78, 40);
     color: #fff;
+    transition:  ease-in-out .2s;
 }
+
+.btn-ecomm-view-prod-details {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.6rem 0.8rem;
+    border-radius: 0;
+    z-index: 6;
+    width: 14em;
+    background-color: rgb(248, 78, 40);
+    color: #fff;
+    transition:  ease-in-out .2s;
+}
+
 
 .btn-ecomm-hov {
     font-size: 14px;
@@ -641,6 +657,7 @@ h6 {
     z-index: 6;
     width: 24em;
     border: 0.8px solid #fff;
+    transition:  ease-in-out .2s;
 }
 
 .btn-ecomm-more {
@@ -650,6 +667,7 @@ h6 {
     border-radius: 0;
     z-index: 6;
     width: 100%;
+    transition:  ease-in-out .2s;
 }
 
 .btn-ecomm-coupon {
@@ -661,6 +679,7 @@ h6 {
     z-index: 6;
     color: rgb(248, 78, 40);
     background-color: #f7f7f7;
+    transition:  ease-in-out .2s;
 }
 
 .banner-btn-ecomm {
@@ -680,6 +699,7 @@ h6 {
     width: auto;
     background-color: rgb(248, 78, 40);
     box-shadow: 0 7px 10px rgba(21, 21, 21, 0.326);
+    transition:  ease-in-out .2s;
 }
 
 .btn-ecomm-shop-2 {
@@ -689,6 +709,17 @@ h6 {
     padding: 0.3rem 0.7rem;
     border-radius: 0;
     z-index: 6;
+    transition:  ease-in-out .2s;
+}
+
+.btn-ecomm-shop-add-to-bag {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0;
+    z-index: 6;
+    transition:  ease-in-out .2s;
 }
 
 .bg-dark-2 {
@@ -718,6 +749,7 @@ h6 {
     z-index: 6;
     width: auto;
     background-color: rgb(248, 78, 40);
+    transition:  ease-in-out .2s;
 }
 
 .btn-ecomm-sort {
@@ -728,6 +760,7 @@ h6 {
     border-radius: 0;
     z-index: 6;
     background-color: #f7f7f7;
+    transition:  ease-in-out .2s;
 }
 
 .selling-fast-wrapper {
@@ -756,13 +789,33 @@ h6 {
     color: #fff;
 }
 
-.track-order-btn:hover {
-    background-color: #222121;
+.btn-ecomm-visit:hover{
+    background-color: rgb(250, 111, 79);
     color: #fff;
 }
 
-.btn-ecomm-visit {
-    background-color: #222121;
+.btn-ecomm:hover{
+    background-color: rgb(250, 111, 79);
+    color: #fff;
+}
+
+.contentBox .content a:hover {
+    background-color: rgb(250, 111, 79);
+    color: #fff;
+}
+
+.btn-ecomm-view-prod-details:hover {
+    background-color: rgb(250, 111, 79);
+    color: #fff;
+}
+
+.btn-ecomm-shop-add-to-bag:hover {
+    background-color: rgb(250, 111, 79);
+    color: #fff;
+}
+
+.track-order-btn:hover {
+    background-color: rgb(250, 111, 79);
     color: #fff;
 }
 
@@ -800,6 +853,12 @@ h6 {
 .visit-stores-con-2 p {
     margin-top: -5px;
     color: #363636;
+}
+
+.visit-stores-con .date-messages{
+    margin-top: -2px;
+   font-size: 12px;
+   color: #595959;
 }
 
 .message-profile-text {
@@ -1296,6 +1355,12 @@ h6 {
 
 /* extra css */
 
+.profile-icon {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%; 
+}
+
 .product-slider-wrapper{
     height: 300px;
 }
@@ -1577,8 +1642,26 @@ h6 {
     z-index: 500000000000000;
 }
 
+.modal-content-2 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 100%;
+    font-size: 18px;
+    max-width: 350px;
+    text-align: center;
+    top: 30%;
+    z-index: 500000000000000;
+}
+
 .modal-content p {
     margin-top: 20px;
+}
+
+.modal-content-2 p {
+    margin-top: 20px;
+    font-size: 14px;
 }
 
 .top-header-other {
@@ -2034,13 +2117,32 @@ h6 {
     margin-top: 15px;
     text-decoration: none;
     border-radius: 10px;
+    transition:  ease-in-out .2s;
 }
+
+
 
 .close {
     position: absolute;
     margin-top: 60px;
     top: 0;
     margin-right: 20px;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    background: url(img/error.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.close-2 {
+    position: absolute;
+    top: 0;
+    margin-right: 10px;
     right: 0;
     width: 35px;
     height: 35px;

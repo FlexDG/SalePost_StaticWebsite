@@ -107,9 +107,12 @@
           <div class="h5 fw-light text-muted text-decoration-line-through">$2089</div>
           <div class="h5 fw-bold text-danger">(70% off)</div>
         </div>
+
+
+
         <!-- <p class="fw-bold mb-0 mt-0 text-success">Inclusive of all taxes</p> -->
 
-        <div class="more-colors mt-3">
+        <!-- <div class="more-colors mt-3">
           <h6 class="fw-bold mb-2 text-dark">More Variations</h6>
           <div class="d-flex align-items-center gap-3">
             <div class="">
@@ -133,7 +136,7 @@
               </a>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- <div class="size-chart mt-4">
           <h6 class="fw-bold mb-2 text-dark">Select Size</h6>
@@ -160,22 +163,40 @@
         </div> -->
 
 
-        <hr class="my-3">
+        <!-- <hr class="my-3">
         <div class="product-info">
           <h6 class="fw-bold mb-2 text-dark text-start">Product Details</h6>
-          <p class="product-info-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quaerat, cupiditate voluptatum
+          <p class="product-info-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quaerat,
+            cupiditate voluptatum
             rerum voluptatem molestias eos odit eveniet quidem nisi distinctio commodi illum placeat, soluta nulla
             aliquid accusamus ipsum corrupti ipsa iusto nam amet praesentium fugit incidunt. Voluptatibus quaerat
             eligendi ipsam. Illo consequatur sit nam, culpa aperiam quisquam totam pariatur ratione, quam, assumenda
             iure ex dicta corporis quo! Dolorum, reiciendis.</p>
-     
-            <a class="btn btn-ecomm-more">View More <i class="bi bi-arrow-down"></i> </a>
 
-            
-         
+          <a class="btn btn-ecomm-more">View More <i class="bi bi-arrow-down"></i> </a>
+        </div> -->
+        <hr class="my-3">
+        <!-- <div class="hstack align-items-center justify-content-center w-100 align-items-stretch">
+          <div class="short-by bg-dark-3 w-100 d-flex align-items-center justify-content-center">
+      
+            <a href="checkout.html" class="btn text-dark">Buy Now</a>
+          </div>
+   
+          <div class="filter-btn bg-default w-100 d-flex align-items-center justify-content-center">
+            <a href="checkout.html" class="btn text-white">Buy Now</a>
+          </div>
+        </div> -->
+
+        <div class=" d-flex align-items-center justify-content-center gap-3">
+          <a href="#OrderCancleModal" data-bs-toggle="modal" class="btn btn-ecomm-view-prod-details rounded-3">Product
+            Details</a>
+
+          <a href="#OrderCancleModal2" data-bs-toggle="modal" class="btn btn-ecomm-view-prod-details rounded-3">Seller
+            Details</a>
         </div>
 
         <hr class="my-3">
+
         <div class="customer-ratings">
           <h6 class="fw-bold mb-2 text-dark">Customer Ratings</h6>
           <div class="d-flex align-items-center gap-4 gap-lg-5 flex-wrap flex-lg-nowrap">
@@ -333,32 +354,7 @@
         </div>
       </div>
       <!--end product info-->
-      <div class="page-content-visit">
-        <div class="card rounded-3 mb-4">
-          <div class="card-body">
-            <div class="d-flex flex-row gap-3 align-items-start">
-              <div class="noti-box mb-1">
-                <div class="category-img">
-                  <figure>
-                    <img src="assets/images/category/01.webp" class="img-fluid-4 rounded-circle" alt="">
-                  </figure>
-                </div>
-              </div>
-              <div class="visit-stores-con">
-                <h6 class="text-dark fw-bold">salepost.apparel</h6>
-                <p class="mb-0 fw-lighter">Salespost Apparel</p>
 
-                <small><span>571</span> Views</small>
-
-              </div>
-              <div class="short-by">
-                <a href="store-products.html" class="btn btn-ecomm-visit">Visit Store</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr>
-      </div>
 
       <!--start similar products-->
 
@@ -599,17 +595,58 @@
     <footer class="page-footer fixed-bottom border-top d-flex align-items-center px-0">
       <div class="hstack align-items-center justify-content-center w-100 align-items-stretch">
         <div class="short-by bg-dark-3 w-100 d-flex align-items-center justify-content-center">
-          <a href="message-box.html" class="btn bg-dark-3 btn-ecomm-shop-2 text-lighter">Chat Seller</a>
-          <div class="vr-2"></div>
-          <a href="cart.html" class="btn bg-dark-3 btn-ecomm-shop-2 text-lighter">Add to Bag</a>
+
+          <a href="cart.html" class="btn bg-dark-3 btn-ecomm-shop-add-to-bag text-lighter">Add to Bag</a>
         </div>
- 
-        <div class="filter-btn bg-default w-100 d-flex align-items-center justify-content-center">
-          <a href="checkout.html" class="btn text-white">Buy Now</a>
+
+        <div class="bg-default btn-ecomm-shop-add-to-bag w-100 d-flex align-items-center justify-content-center">
+          <a href="checkout.html" class="btn btn-ecomm-shop-add-to-bag text-white">Buy Now</a>
         </div>
       </div>
     </footer>
     <!--end to footer-->
+
+    <!-- Start Modal -->
+    <div class="modal fade" id="OrderCancleModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content-2">
+          <div class="modal-body">
+            <div class="close-2" data-bs-dismiss="modal"></div>
+            <div class="text-start">
+              <h5 class="text-dark fw-bold">Product Details</h5>
+              <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora magnam architecto eius
+                quae, vitae, ex labore dolore quibusdam, dolorum ut quod at in deserunt? Distinctio, corporis! Delectus
+                reiciendis illo totam, neque odit ut reprehenderit minus laboriosam, possimus voluptatibus maiores?
+                Magni!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="OrderCancleModal2">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content-2">
+              <div class="modal-body">
+                  <div class="close-2" data-bs-dismiss="modal"></div>
+                  <div class="text-start d-flex align-items-center">
+                      <img src="assets/images/avatars/01.webp" alt="" class="profile-icon me-3">
+                      <h5 class="text-dark fw-bold">johndoe123</h5>
+                  </div>
+                  <p class="mb-0 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa omnis fugiat nobis ea id
+                      placeat iure voluptatum recusandae corrupti perspiciatis, dolorem ullam cumque aliquid voluptates
+                      quibusdam voluptas modi inventore enim?</p>
+              </div>
+              <div class="modal-footer justify-content-center gap-3">
+                  <a href="message-box.html" class="btn btn-ecomm text-white">Message Seller</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+
+
+    <!-- End Modal -->
 
   </div>
   <!--end wrapper-->
@@ -619,10 +656,10 @@
   <script>
     let moreButtons = document.querySelectorAll('.btn-ecomm-more');
     for (let i = 0; i < moreButtons.length; i++) {
-      moreButtons[i].addEventListener('click', function() {
+      moreButtons[i].addEventListener('click', function () {
         let productInfo = moreButtons[i].parentNode.parentNode;
         productInfo.classList.toggle('active');
-  
+
         // Change button text based on the current state
         if (productInfo.classList.contains('active')) {
           moreButtons[i].innerHTML = '<i class="bi bi-arrow-up"></i> View Less';
@@ -632,8 +669,8 @@
       });
     }
   </script>
-  
-  
+
+
 
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/jquery.min.js"></script>

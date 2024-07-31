@@ -2469,7 +2469,7 @@ textarea.form-control-lg {
 	/* border: var(--bs-btn-border-width) solid var(--bs-btn-border-color); */
 	border-radius: var(--bs-btn-border-radius); 
 	background-color: var(--bs-btn-bg);
-	/* transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out */
+	transition: color .15s ease-in-out, background-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 @media (prefers-reduced-motion:reduce) {
 	.btn {
@@ -4786,6 +4786,21 @@ textarea.form-control-lg {
 	border-radius: var(--bs-modal-border-radius);
 	outline: 0
 }
+
+.modal-content-2 {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	color: var(--bs-modal-color);
+	pointer-events: auto;
+	background-color: var(--bs-modal-bg);
+	background-clip: padding-box;
+	border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+	border-radius: var(--bs-modal-border-radius);
+	outline: 0
+}
+
 .modal-backdrop {
 	--bs-backdrop-zindex: 1050;
 	--bs-backdrop-bg: #000;
