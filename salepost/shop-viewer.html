@@ -32,43 +32,37 @@
 
    <!--start wrapper-->
     <div class="wrapper">
+
       <header class="top-header fixed-top border-bottom d-flex-2 align-items-center">
         <nav class="navbar navbar-expand w-100 p-0 gap-3 align-items-center">
+          
           <div class="nav-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidenav"><a href="javascript:;"><i
                 class="bi bi-list"></i></a></div>
+                <!-- <div class="nav-button" onclick="history.back()"><a href="javascript:;"><i class="bi bi-arrow-left"></i></a></div> -->
                 <div class="nav-button" onclick="history.back()"><a href="javascript:;"><i class="bi bi-arrow-left"></i></a></div>
           <div class="brand-logo"><a href="javascript:;"><img src="assets/images/logo.png" width="145" alt=""></a></div>
           <ul class="navbar-nav ms-auto d-flex align-items-center top-right-menu">
-        
             <li class="nav-item">
-              <a class="nav-link" href="authentication-log-in.html"><i class="bi bi-heart"></i></a>
+              <a class="nav-link" href="wishlist.html"><i class="bi bi-heart"></i></a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link position-relative" href="cart.html">
                 <div class="cart-badge">8</div>
                 <i class="bi bi-bag"></i>
               </a>
-            </li>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="profile.html"><i class="bi bi-person-circle"></i></a>
+              <a class="nav-link" href="authentication-log-in.html"><i class="bi bi-person-circle"></i></a>
             </li>
-  
           </ul>
         </nav>
         <div class="search-container">
           <div class="search-bar">
-              <input type="text" id="search-input" placeholder="Search...">
-              <i class="bi bi-search" id="search-icon"></i>
+            <input type="text" placeholder="Search...">
+            <i class="bi bi-search"></i>
           </div>
-          <a href="#offcanvasFilter" data-bs-toggle="offcanvas"> 
-              <i class="bi bi-filter filter-icon"></i>
-          </a>
-          <ul class="suggestion-list" id="suggestion-list">
-              <li><a href="shop-viewer.html">Clothing and Jewelry</a></li>
-              <li><a href="category2.html">Cars & Vehicles</a></li>
-              <li><a href="category3.html">Community</a></li>
-          </ul>
-      </div>
+          <a href="#offcanvasFilter" data-bs-toggle="offcanvas"> <i class="bi bi-filter filter-icon"></i> </i></a>
+        </div>
       </header>
         <!--end to header-->
  
@@ -78,16 +72,18 @@
     
          <!--start produt grid-->
   
-         <div class="trending-category-2 mt-7">
+         <div class="trending-category-2">
+          <h4 class="my-2 text-start fw-bold section-title">Clothes & Jewelry</h4>
           <div class="short-by">
                    <a href="#offcanvasSortBy" data-bs-toggle="offcanvas" class="btn btn-ecomm-sort">Sort By <i class="bi bi-arrow-down"></i> </a>
                </div>
             <div class="row row-cols-2 row-cols-md-3 g-3 mt-1">
                  <div class="col d-flex">
                    <div class="card rounded-0 w-100 rounded-3 overflow-hidden">
-                     <i class="bi bi-cart-plus homepage-buy-icon-3 float-right"></i>
-                     <i class="bi bi-x-lg homepage-buy-icon-2 float-right"></i>
-                     <a href="product-details.html"><img src="assets/images/trending/01.webp" class="img-fluid" alt=""></a>
+                    <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+                    <a href="shop.html">  <i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
+                 
+                       <a href="product-details-viewer.html"><img src="assets/images/trending/01.webp" class="img-fluid" alt=""></a>
        
                      <div class="card-body text-start">
                        <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
@@ -104,10 +100,10 @@
                  </div>
                  <div class="col d-flex">
                    <div class="card rounded-0 w-100 rounded-3 overflow-hidden">
-                    <i class="bi bi-cart-plus homepage-buy-icon-3 float-right"></i>
-                    <i class="bi bi-x-lg homepage-buy-icon-2 float-right"></i>
+                    <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+                    <a href="shop.html">  <i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
                
-                     <a href="product-details.html"><img src="assets/images/trending/06.webp" class="img-fluid" alt=""></a>
+                     <a href="product-details-viewer.html"><img src="assets/images/trending/06.webp" class="img-fluid" alt=""></a>
        
                      <div class="card-body text-start">
                        <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
@@ -124,10 +120,10 @@
                  </div>
                  <div class="col d-flex">
                    <div class="card rounded-0 w-100 rounded-3 overflow-hidden">
-                    <i class="bi bi-cart-plus homepage-buy-icon-3 float-right"></i>
-                    <i class="bi bi-x-lg homepage-buy-icon-2 float-right"></i>
+                    <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+                    <a href="shop.html">  <i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
                  
-                     <a href="product-details.html"><img src="assets/images/accessories/03.webp" class="img-fluid" alt=""></a>
+                    <a href="product-details-viewer.html"><img src="assets/images/accessories/03.webp" class="img-fluid" alt=""></a>
        
                      <div class="card-body text-start">
                        <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
@@ -144,10 +140,10 @@
                  </div>
                  <div class="col d-flex">
                    <div class="card rounded-0 w-100 rounded-3 overflow-hidden">
-                    <i class="bi bi-cart-plus homepage-buy-icon-3 float-right"></i>
-                    <i class="bi bi-x-lg homepage-buy-icon-2 float-right"></i>
+                    <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+                    <a href="shop.html">  <i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
                 
-                     <a href="product-details.html"><img src="assets/images/shop/03.webp" class="img-fluid" alt=""></a>
+                    <a href="product-details-viewer.html"><img src="assets/images/shop/03.webp" class="img-fluid" alt=""></a>
        
                      <div class="card-body text-start">
                        <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
@@ -164,10 +160,10 @@
                  </div>
                  <div class="col d-flex">
                    <div class="card rounded-0 w-100 rounded-3 overflow-hidden">
-                    <i class="bi bi-cart-plus homepage-buy-icon-3 float-right"></i>
-                    <i class="bi bi-x-lg homepage-buy-icon-2 float-right"></i>
+                    <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+                    <a href="shop.html">  <i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
                  
-                     <a href="product-details.html"><img src="assets/images/similar/05.webp" class="img-fluid" alt=""></a>
+                    <a href="product-details-viewer.html"><img src="assets/images/similar/05.webp" class="img-fluid" alt=""></a>
        
                      <div class="card-body text-start">
                        <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
@@ -184,10 +180,10 @@
                  </div>
                  <div class="col d-flex">
                    <div class="card rounded-0 w-100 rounded-3 overflow-hidden">
-                    <i class="bi bi-cart-plus homepage-buy-icon-3 float-right"></i>
-                    <i class="bi bi-x-lg homepage-buy-icon-2 float-right"></i>
+                    <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+                    <a href="shop.html">  <i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
              
-                     <a href="product-details.html"><img src="assets/images/shop/08.webp" class="img-fluid" alt=""></a>
+                    <a href="product-details-viewer.html"><img src="assets/images/shop/08.webp" class="img-fluid" alt=""></a>
                      <div class="card-body text-start">
                        <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
                        <div class="price-rating d-flex justify-content-between align-items-center">
@@ -216,101 +212,7 @@
 
        <!--start sidenav-->
      
-       <div class="sidenav">
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSidenav">
-          <div class="offcanvas-header bg-default border-bottom border-light">
-            <div class="hstack gap-3">
-              <div class="">
-                <img src="assets/images/avatars/01.webp" width="45" class="rounded-3 p-1 bg-white" alt="" />
-              </div>
-              <div class="details">
-                <h6 class="mb-0 text-white">Hi! Jhon Deo</h6>
-              </div>
-            </div>
-            <div data-bs-dismiss="offcanvas"><i class="bi bi-x-lg fs-5 text-white"></i></div>
-          </div>
-          <div class="offcanvas-body p-0">
-            <nav class="sidebar-nav">
-              <ul class="metismenu" id="sidenav">
-                <li>
-                  <a href="home.html">
-                    <i class="bi bi-house-door me-2"></i>
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a class="has-arrow" href="javascript:;">
-                    <i class="bi bi-person-circle me-2"></i>
-                    Account
-                  </a>
-                  <ul>
-                    <li><a href="profile.html">Profile</a></li>
-                    <li><a href="my-orders.html">My Orders</a></li>
-                    <li><a href="my-profile.html">Personal Information</a></li>
-                    <li><a href="addresses.html">Addresses</a></li>
-                    <li><a href="notification.html">Notifications</a></li>
-                    <li><a href="authentication-change-password.html">Change Password</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a class="has-arrow" href="javascript:;">
-                    <i class="bi bi-basket3 me-2"></i>
-                    Salepost Mall
-                  </a>
-                  <ul>
-                    <li><a href="stores-list.html">Vendors</a></li>
-      
-                  </ul>
-                </li>
-                <li>
-                  <a class="has-arrow" href="javascript:;">
-                    <i class="bi bi-credit-card me-2"></i>
-                    Payment
-                  </a>
-                  <ul>
-                    <li><a href="payment-method.html">Payment Method</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a class="has-arrow" href="javascript:;">
-                    <i class="bi bi-grid me-2"></i>
-                    Coupons and Deals
-                  </a>
-                  <ul>
-                    <li><a href="coupons.html">Active Coupons</a></li>
-                    <li><a href="deals.html">Active Deals</a></li>
-                  </ul>
-                </li>
-      
-                <li>
-                  <a class="has-arrow" href="javascript:;">
-                    <i class="bi bi-star me-2"></i>
-                    Customer Reviews
-                  </a>
-                  <ul>
-                    <li><a href="reviews-and-ratings.html">Ratings & Reviews</a></li>
-                    <li><a href="write-a-review.html">Write a Review</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="about-us.html">
-                    <i class="bi bi-emoji-smile me-2"></i>
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="contact-us.html">
-                     <i class="bi bi-headphones me-2"></i>
-                     Contact Us
-                   </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-      
-        </div>
-      </div>
-      <!--end sidenav-->
+
 
     <!--start sort by offcanvas-->   
       <div class="offcanvas offcanvas-bottom h-auto" tabindex="-1" id="offcanvasSortBy">
@@ -331,7 +233,7 @@
 
 
   <!--start filter by offcanvas-->   
-  <div class="offcanvas offcanvas-bottom h-100 border-top-0" tabindex="-1" id="offcanvasFilter">
+  <div class="offcanvas offcanvas-bottom h-90 border-top-0" tabindex="-1" id="offcanvasFilter">
     <div class="offcanvas-header border-bottom justify-content-center">
       <h6 class="offcanvas-title mb-0 fw-bold text-uppercase text-dark">Filters</h6>
     </div>
@@ -664,16 +566,14 @@
 
     </div>
     <div class="offcanvas-footer border-top">
-      <div class="offcanvas-footer border-top">
-        <div class="hstack align-items-center justify-content-center w-100 align-items-stretch">
-          <div class="short-by w-100 d-flex align-items-center justify-content-center">
-            <a href="javascript:;" data-bs-dismiss="offcanvas" class="btn bg-transparent btn-ecomm-shop"><i
-                  class="bi bi-x-lg me-3"></i>Close</a>
-          </div>
-          <div class="vr"></div>
-          <div class="filter-btn bg-default w-100 d-flex align-items-center justify-content-center">
-            <a href="javascript:;" class="btn text-white"><i class="bi bi-x-lg me-3"></i>Apply</a>
-          </div>
+      <div class="hstack align-items-center justify-content-center w-100 align-items-stretch">
+        <div class="short-by w-100 d-flex align-items-center justify-content-center">
+          <a href="javascript:;" data-bs-dismiss="offcanvas" class="btn bg-transparent btn-ecomm-shop"><i
+                class="bi bi-x-lg me-3"></i>Close</a>
+        </div>
+        <div class="vr"></div>
+        <div class="filter-btn bg-default w-100 d-flex align-items-center justify-content-center">
+          <a href="javascript:;" class="btn text-white"><i class="bi bi-check-lg me-3"></i>Apply</a>
         </div>
       </div>
     </div>
@@ -685,45 +585,108 @@
  
 <!--end Similar Products-->
 
+
+<div class="sidenav">
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSidenav">
+    <div class="offcanvas-header bg-default border-bottom border-light">
+      <div class="hstack gap-3">
+        <div class="">
+          <img src="assets/images/avatars/account-icon.png" width="45" class="rounded-3 p-1 bg-white" alt="" />
+        </div>
+        <div class="details">
+          <h6 class="mb-0 text-white">Welcome to SalePost!</h6>
+        </div>
+      </div>
+      <div data-bs-dismiss="offcanvas"><i class="bi bi-x-lg fs-5 text-white"></i></div>
+    </div>
+    <div class="offcanvas-body p-0">
+      <nav class="sidebar-nav">
+        <ul class="metismenu" id="sidenav">
+          <li>
+            <a href="home-viewer.html">
+              <i class="bi bi-house-door me-2"></i>
+              Home
+            </a>
+          </li>
+          <!-- <li>
+            <a class="has-arrow" href="javascript:;">
+              <i class="bi bi-person-circle me-2"></i>
+              Account
+            </a>
+            <ul>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="my-orders.html">My Orders</a></li>
+              <li><a href="my-profile.html">Personal Information</a></li>
+              <li><a href="addresses.html">Addresses</a></li>
+              <li><a href="notification.html">Notifications</a></li>
+              <li><a href="authentication-change-password.html">Change Password</a></li>
+            </ul>
+          </li> -->
+          <li>
+            <a class="has-arrow" href="javascript:;">
+              <i class="bi bi-basket3 me-2"></i>
+              Salepost Mall
+            </a>
+            <ul>
+              <li><a href="stores-list-viewer.html">Vendors</a></li>
+
+            </ul>
+          </li>
+          <!-- <li>
+            <a class="has-arrow" href="javascript:;">
+              <i class="bi bi-credit-card me-2"></i>
+              Payment
+            </a>
+            <ul>
+              <li><a href="payment-method.html">Payment Method</a></li>
+            </ul>
+          </li> -->
+          <li>
+            <a class="has-arrow" href="javascript:;">
+              <i class="bi bi-grid me-2"></i>
+              Coupons and Deals
+            </a>
+            <ul>
+              <!-- <li><a href="coupons.html">Active Coupons</a></li> -->
+              <li><a href="deals-viewer.html">Active Deals</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a class="has-arrow" href="javascript:;">
+              <i class="bi bi-star me-2"></i>
+              Customer Reviews
+            </a>
+            <ul>
+              <li><a href="reviews-and-ratings-viewer.html">Ratings & Reviews</a></li>
+              <!-- <li><a href="write-a-review.html">Write a Review</a></li> -->
+            </ul>
+          </li>
+          <li>
+            <a href="about-us-viewer.html">
+              <i class="bi bi-emoji-smile me-2"></i>
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="contact-us-viewer.html">
+               <i class="bi bi-headphones me-2"></i>
+               Contact Us
+             </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+</div>
+
+
     </div>
    <!--end wrapper-->
 
 
     <!--JS Files-->  
-
-    <script>
-
-      const searchInput = document.getElementById('search-input');
-          const searchIcon = document.getElementById('search-icon');
-          const suggestionList = document.getElementById('suggestion-list');
-      
-          function showSuggestions() {
-              suggestionList.style.display = 'block';
-          }
-      
-          function hideSuggestions() {
-              suggestionList.style.display = 'none';
-          }
-      
-          searchInput.addEventListener('focus', showSuggestions);
-          searchInput.addEventListener('blur', hideSuggestions);
-      
-          searchIcon.addEventListener('click', showSuggestions);
-      
-          searchInput.addEventListener('keydown', function(event) {
-              if (event.key === 'Enter') {
-                  event.preventDefault(); // Prevent form submission
-                  window.location.href = 'shop-viewer.html';
-              }
-          });
-      
-          // Prevent hiding when clicking on the suggestion list
-          suggestionList.addEventListener('mousedown', function(event) {
-              event.preventDefault();
-          });
-        </script>
-
-
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
     <script src="assets/js/jquery.min.js"></script>

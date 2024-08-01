@@ -34,20 +34,46 @@
     <div class="wrapper">
 
        <!--start to header-->
-       <header class="top-header-other fixed-top border-bottom d-flex align-items-center">
+       <header class="top-header fixed-top border-bottom d-flex-2 align-items-center">
         <nav class="navbar navbar-expand w-100 p-0 gap-3 align-items-center">
- 
-            <div class="nav-button" onclick="history.back()"><a href="javascript:;"><i class="bi bi-arrow-left"></i></a></div>
-            <div class="shop-Cart">
-              <h4 class="mb-0 fw-bold text-dark">Write a Review</h4>
-            </div>
-      
+          
+          <div class="nav-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidenav"><a href="javascript:;"><i
+                class="bi bi-list"></i></a></div>
+                <!-- <div class="nav-button" onclick="history.back()"><a href="javascript:;"><i class="bi bi-arrow-left"></i></a></div> -->
+                <div class="nav-button" onclick="history.back()"><a href="javascript:;"><i class="bi bi-arrow-left"></i></a></div>
+          <div class="brand-logo"><a href="javascript:;"><img src="assets/images/logo.png" width="145" alt=""></a></div>
+          <ul class="navbar-nav ms-auto d-flex align-items-center top-right-menu">
+            <li class="nav-item">
+              <a class="nav-link" href="wishlist.html"><i class="bi bi-heart"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative" href="cart.html">
+                <div class="cart-badge">8</div>
+                <i class="bi bi-bag"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html"><i class="bi bi-person-circle"></i></a>
+            </li>
+          </ul>
         </nav>
-       </header>
+        <div class="search-container">
+          <div class="search-bar-1">
+              <input type="text" id="search-input" placeholder="Search...">
+              <i class="bi bi-search" id="search-icon"></i>
+          </div>
+       
+          <ul class="suggestion-list" id="suggestion-list">
+              <li><a href="shop-viewer.html">Clothing and Jewelry</a></li>
+              <li><a href="category2.html">Cars & Vehicles</a></li>
+              <li><a href="category3.html">Community</a></li>
+          </ul>
+      </div>
+      </header>
         <!--end to header-->
 
       <!--start to page content-->
-       <div class="page-content">
+       <div class="page-content-contact">
 
         <div class="card rounded-3">
           <div class="card-body">
@@ -107,12 +133,141 @@
         </div>
     </footer>
        <!--end to footer-->
-
+       <div class="sidenav">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSidenav">
+          <div class="offcanvas-header bg-default border-bottom border-light">
+            <div class="hstack gap-3">
+              <div class="">
+                <img src="assets/images/avatars/01.webp" width="45" class="rounded-3 p-1 bg-white" alt="" />
+              </div>
+              <div class="details">
+                <h6 class="mb-0 text-white">Hi! Jhon Deo</h6>
+              </div>
+            </div>
+            <div data-bs-dismiss="offcanvas"><i class="bi bi-x-lg fs-5 text-white"></i></div>
+          </div>
+          <div class="offcanvas-body p-0">
+            <nav class="sidebar-nav">
+              <ul class="metismenu" id="sidenav">
+                <li>
+                  <a href="home.html">
+                    <i class="bi bi-house-door me-2"></i>
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a class="has-arrow" href="javascript:;">
+                    <i class="bi bi-person-circle me-2"></i>
+                    Account
+                  </a>
+                  <ul>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="my-orders.html">My Orders</a></li>
+                    <li><a href="my-profile.html">Personal Information</a></li>
+                    <li><a href="addresses.html">Addresses</a></li>
+                    <li><a href="notification.html">Notifications</a></li>
+                    <li><a href="authentication-change-password.html">Change Password</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="has-arrow" href="javascript:;">
+                    <i class="bi bi-basket3 me-2"></i>
+                    Salepost Mall
+                  </a>
+                  <ul>
+                    <li><a href="stores-list.html">Vendors</a></li>
+      
+                  </ul>
+                </li>
+                <li>
+                  <a class="has-arrow" href="javascript:;">
+                    <i class="bi bi-credit-card me-2"></i>
+                    Payment
+                  </a>
+                  <ul>
+                    <li><a href="payment-method.html">Payment Method</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="has-arrow" href="javascript:;">
+                    <i class="bi bi-grid me-2"></i>
+                    Coupons and Deals
+                  </a>
+                  <ul>
+                    <li><a href="coupons.html">Active Coupons</a></li>
+                    <li><a href="deals.html">Active Deals</a></li>
+                  </ul>
+                </li>
+      
+                <li>
+                  <a class="has-arrow" href="javascript:;">
+                    <i class="bi bi-star me-2"></i>
+                    Customer Reviews
+                  </a>
+                  <ul>
+                    <li><a href="reviews-and-ratings.html">Ratings & Reviews</a></li>
+                    <li><a href="write-a-review.html">Write a Review</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="about-us.html">
+                    <i class="bi bi-emoji-smile me-2"></i>
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a href="contact-us.html">
+                     <i class="bi bi-headphones me-2"></i>
+                     Contact Us
+                   </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+      
+        </div>
+      </div>
+    
+    </div>
     </div>
    <!--end wrapper-->
 
 
     <!--JS Files-->  
+
+    <script>
+
+      const searchInput = document.getElementById('search-input');
+                const searchIcon = document.getElementById('search-icon');
+                const suggestionList = document.getElementById('suggestion-list');
+            
+                function showSuggestions() {
+                    suggestionList.style.display = 'block';
+                }
+            
+                function hideSuggestions() {
+                    suggestionList.style.display = 'none';
+                }
+            
+                searchInput.addEventListener('focus', showSuggestions);
+                searchInput.addEventListener('blur', hideSuggestions);
+            
+                searchIcon.addEventListener('click', showSuggestions);
+            
+                searchInput.addEventListener('keydown', function(event) {
+                    if (event.key === 'Enter') {
+                        event.preventDefault(); // Prevent form submission
+                        window.location.href = 'shop-viewer.html';
+                    }
+                });
+            
+                // Prevent hiding when clicking on the suggestion list
+                suggestionList.addEventListener('mousedown', function(event) {
+                    event.preventDefault();
+                });
+      
+      </script>
+
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
     <script src="assets/js/jquery.min.js"></script>

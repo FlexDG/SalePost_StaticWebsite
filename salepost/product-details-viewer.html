@@ -39,15 +39,14 @@
 
     <header class="top-header fixed-top border-bottom d-flex-2 align-items-center">
       <nav class="navbar navbar-expand w-100 p-0 gap-3 align-items-center">
-        
         <div class="nav-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidenav"><a href="javascript:;"><i
               class="bi bi-list"></i></a></div>
-              <!-- <div class="nav-button" onclick="history.back()"><a href="javascript:;"><i class="bi bi-arrow-left"></i></a></div> -->
               <div class="nav-button" onclick="history.back()"><a href="javascript:;"><i class="bi bi-arrow-left"></i></a></div>
         <div class="brand-logo"><a href="javascript:;"><img src="assets/images/logo.png" width="145" alt=""></a></div>
         <ul class="navbar-nav ms-auto d-flex align-items-center top-right-menu">
+      
           <li class="nav-item">
-            <a class="nav-link" href="wishlist.html"><i class="bi bi-heart"></i></a>
+            <a class="nav-link" href="authentication-log-in.html"><i class="bi bi-heart"></i></a>
           </li>
           <li class="nav-item">
             <a class="nav-link position-relative" href="cart.html">
@@ -58,14 +57,17 @@
           <li class="nav-item">
             <a class="nav-link" href="profile.html"><i class="bi bi-person-circle"></i></a>
           </li>
+
         </ul>
       </nav>
       <div class="search-container">
-        <div class="search-bar-1">
+        <div class="search-bar">
             <input type="text" id="search-input" placeholder="Search...">
             <i class="bi bi-search" id="search-icon"></i>
         </div>
-     
+        <a href="#offcanvasFilter" data-bs-toggle="offcanvas"> 
+            <i class="bi bi-filter filter-icon"></i>
+        </a>
         <ul class="suggestion-list" id="suggestion-list">
             <li><a href="shop-viewer.html">Clothing and Jewelry</a></li>
             <li><a href="category2.html">Cars & Vehicles</a></li>
@@ -73,10 +75,11 @@
         </ul>
     </div>
     </header>
+
     <!--end to header-->
 
     <!--start to page content-->
-    <div class="page-content-contact-2 p-0">
+    <div class="page-content-prod p-0">
 
       <!--start product image slider-->
       <div class="product-slider-wrapper position-relative mb-0 overflow-hidden">
@@ -224,7 +227,7 @@
               <input type="checkbox" id="consent-checkbox">
               <label for="consent-checkbox">I consent to receive marketing offers from Salepost</label>
           </div>
-          <a href="message-box.html"> <button class="btn btn-ecomm rounded-3 w-100 border-0">message seller</button></a>
+          <a href="authentication-log-in.html"> <button class="btn btn-ecomm rounded-3 w-100 border-0">sign in to message</button></a>
       </div>
       <hr class="my-3">
 
@@ -627,11 +630,11 @@
       <div class="hstack align-items-center justify-content-center w-100 align-items-stretch">
         <div class="short-by bg-dark-3 w-100 d-flex align-items-center justify-content-center">
 
-          <a href="cart.html" class="btn bg-dark-3 btn-ecomm-shop-add-to-bag-2 text-lighter">Add to Bag</a>
+          <a href="authentication-log-in.html" class="btn bg-dark-3 btn-ecomm-shop-add-to-bag text-lighter">Add to Bag</a>
         </div>
 
         <div class="bg-default btn-ecomm-shop-add-to-bag w-100 d-flex align-items-center justify-content-center">
-          <a href="checkout.html" class="btn btn-ecomm-shop-add-to-bag text-white">Buy Now</a>
+          <a href="authentication-log-in.html" class="btn btn-ecomm-shop-add-to-bag text-white">Buy Now</a>
         </div>
       </div>
     </footer>
@@ -678,16 +681,16 @@
 
 
     <!-- End Modal -->
- 
+
     <div class="sidenav">
       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSidenav">
         <div class="offcanvas-header bg-default border-bottom border-light">
           <div class="hstack gap-3">
             <div class="">
-              <img src="assets/images/avatars/01.webp" width="45" class="rounded-3 p-1 bg-white" alt="" />
+              <img src="assets/images/avatars/account-icon.png" width="45" class="rounded-3 p-1 bg-white" alt="" />
             </div>
             <div class="details">
-              <h6 class="mb-0 text-white">Hi! Jhon Deo</h6>
+              <h6 class="mb-0 text-white">Welcome to SalePost!</h6>
             </div>
           </div>
           <div data-bs-dismiss="offcanvas"><i class="bi bi-x-lg fs-5 text-white"></i></div>
@@ -696,12 +699,12 @@
           <nav class="sidebar-nav">
             <ul class="metismenu" id="sidenav">
               <li>
-                <a href="home-user.html">
+                <a href="home-viewer.html">
                   <i class="bi bi-house-door me-2"></i>
                   Home
                 </a>
               </li>
-              <li>
+              <!-- <li>
                 <a class="has-arrow" href="javascript:;">
                   <i class="bi bi-person-circle me-2"></i>
                   Account
@@ -714,18 +717,18 @@
                   <li><a href="notification.html">Notifications</a></li>
                   <li><a href="authentication-change-password.html">Change Password</a></li>
                 </ul>
-              </li>
+              </li> -->
               <li>
                 <a class="has-arrow" href="javascript:;">
                   <i class="bi bi-basket3 me-2"></i>
                   Salepost Mall
                 </a>
                 <ul>
-                  <li><a href="stores-list.html">Vendors</a></li>
-    
+                  <li><a href="stores-list-viewer.html">Vendors</a></li>
+
                 </ul>
               </li>
-              <li>
+              <!-- <li>
                 <a class="has-arrow" href="javascript:;">
                   <i class="bi bi-credit-card me-2"></i>
                   Payment
@@ -733,36 +736,36 @@
                 <ul>
                   <li><a href="payment-method.html">Payment Method</a></li>
                 </ul>
-              </li>
+              </li> -->
               <li>
                 <a class="has-arrow" href="javascript:;">
                   <i class="bi bi-grid me-2"></i>
                   Coupons and Deals
                 </a>
                 <ul>
-                  <li><a href="coupons.html">Active Coupons</a></li>
-                  <li><a href="deals.html">Active Deals</a></li>
+                  <!-- <li><a href="coupons.html">Active Coupons</a></li> -->
+                  <li><a href="deals-viewer.html">Active Deals</a></li>
                 </ul>
               </li>
-    
+
               <li>
                 <a class="has-arrow" href="javascript:;">
                   <i class="bi bi-star me-2"></i>
                   Customer Reviews
                 </a>
                 <ul>
-                  <li><a href="reviews-and-ratings.html">Ratings & Reviews</a></li>
-                  <li><a href="write-a-review.html">Write a Review</a></li>
+                  <li><a href="reviews-and-ratings-viewer.html">Ratings & Reviews</a></li>
+                  <!-- <li><a href="write-a-review.html">Write a Review</a></li> -->
                 </ul>
               </li>
               <li>
-                <a href="about-us.html">
+                <a href="about-us-viewer.html">
                   <i class="bi bi-emoji-smile me-2"></i>
                   About Us
                 </a>
               </li>
               <li>
-                <a href="contact-us.html">
+                <a href="contact-us-viewer.html">
                    <i class="bi bi-headphones me-2"></i>
                    Contact Us
                  </a>
@@ -770,10 +773,10 @@
             </ul>
           </nav>
         </div>
-    
+  
       </div>
     </div>
-  
+
   </div>
   <!--end wrapper-->
 
@@ -823,7 +826,6 @@
           suggestionList.addEventListener('mousedown', function(event) {
               event.preventDefault();
           });
-
 
   </script>
 

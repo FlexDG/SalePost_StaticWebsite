@@ -34,20 +34,48 @@
     <div class="wrapper">
 
        <!--start to header-->
-       <header class="top-header-other fixed-top border-bottom d-flex align-items-center">
+       <header class="top-header fixed-top border-bottom d-flex-2 align-items-center">
         <nav class="navbar navbar-expand w-100 p-0 gap-3 align-items-center">
- 
-            <div class="nav-button" onclick="history.back()"><a href="javascript:;"><i class="bi bi-arrow-left"></i></a></div>
-            <div class="shop-Cart">
-              <h4 class="mb-0 fw-bold text-dark">My Cart</h4>
-            </div>
-      
+          
+          <div class="nav-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidenav"><a href="javascript:;"><i
+                class="bi bi-list"></i></a></div>
+                <!-- <div class="nav-button" onclick="history.back()"><a href="javascript:;"><i class="bi bi-arrow-left"></i></a></div> -->
+                <div class="nav-button" onclick="history.back()"><a href="javascript:;"><i class="bi bi-arrow-left"></i></a></div>
+          <div class="brand-logo"><a href="javascript:;"><img src="assets/images/logo.png" width="145" alt=""></a></div>
+          <ul class="navbar-nav ms-auto d-flex align-items-center top-right-menu">
+            <li class="nav-item">
+              <a class="nav-link" href="wishlist.html"><i class="bi bi-heart"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative" href="cart.html">
+                <div class="cart-badge">8</div>
+                <i class="bi bi-bag"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="authentication-log-in.html"><i class="bi bi-person-circle"></i></a>
+            </li>
+          </ul>
         </nav>
-       </header>
+        <div class="search-container">
+          <div class="search-bar">
+              <input type="text" id="search-input" placeholder="Search...">
+              <i class="bi bi-search" id="search-icon"></i>
+          </div>
+          <a href="#offcanvasFilter" data-bs-toggle="offcanvas"> 
+              <i class="bi bi-filter filter-icon"></i>
+          </a>
+          <ul class="suggestion-list" id="suggestion-list">
+              <li><a href="shop-viewer.html">Clothing and Jewelry</a></li>
+              <li><a href="category2.html">Cars & Vehicles</a></li>
+              <li><a href="category3.html">Community</a></li>
+          </ul>
+      </div>
+      </header>
         <!--end to header-->
 
       <!--start to page content-->
-       <div class="page-content">
+       <div class="page-content-contact">
 
 
        <!--start cart list-->
@@ -203,7 +231,365 @@
        </footer>
        <!--end to footer-->
  
-
+       <div class="offcanvas offcanvas-bottom h-100 border-top-0" tabindex="-1" id="offcanvasFilter">
+        <div class="offcanvas-header border-bottom justify-content-center">
+          <h6 class="offcanvas-title mb-0 fw-bold text-uppercase text-dark">Filters</h6>
+        </div>
+        <div class="offcanvas-body p-0">
+  
+          <div class="d-flex align-items-start">
+            <div class="nav flex-column nav-pills filter-menu bottom-0">
+              <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#Categories"
+                type="button">Categories</button>
+              <button class="nav-link" data-bs-toggle="pill" data-bs-target="#Brands" type="button">Brands</button>
+              <button class="nav-link" data-bs-toggle="pill" data-bs-target="#Price" type="button">Price</button>
+              <button class="nav-link" data-bs-toggle="pill" data-bs-target="#Colors" type="button">Colors</button>
+              <button class="nav-link" data-bs-toggle="pill" data-bs-target="#DiscountRange"
+                type="button">Discounts</button>
+            </div>
+            <div class="tab-content p-3 filter-content w-100">
+              <div class="tab-pane fade show active" id="Categories">
+                <div class="categories-wrapper">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekCate1">
+                    <label class="form-check-label" for="chekCate1">
+                      <span>Shirts</span><span class="product-number">(1548)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekCate2">
+                    <label class="form-check-label" for="chekCate2">
+                      <span>Jeans</span><span class="product-number">(568)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekCate3">
+                    <label class="form-check-label" for="chekCate3">
+                      <span>Kurtas</span><span class="product-number">(784)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekCate4">
+                    <label class="form-check-label" for="chekCate4">
+                      <span>Makeup</span><span class="product-number">(1789)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekCate5">
+                    <label class="form-check-label" for="chekCate5">
+                      <span>Shoes</span><span class="product-number">(358)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekCate6">
+                    <label class="form-check-label" for="chekCate6">
+                      <span>Heels</span><span class="product-number">(572)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekCate7">
+                    <label class="form-check-label" for="chekCate7">
+                      <span>Lehenga</span><span class="product-number">(754)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekCate8">
+                    <label class="form-check-label" for="chekCate8">
+                      <span>Laptops</span><span class="product-number">(541)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekCate9">
+                    <label class="form-check-label" for="chekCate9">
+                      <span>Jewellary</span><span class="product-number">(365)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekCate10">
+                    <label class="form-check-label" for="chekCate10">
+                      <span>Sports</span><span class="product-number">(4512)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekCate11">
+                    <label class="form-check-label" for="chekCate11">
+                      <span>Music</span><span class="product-number">(647)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekCate12">
+                    <label class="form-check-label" for="chekCate12">
+                      <span>Headphones</span><span class="product-number">(9848)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekCate13">
+                    <label class="form-check-label" for="chekCate13">
+                      <span>Sunglasses</span><span class="product-number">(751)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekCate14">
+                    <label class="form-check-label" for="chekCate14">
+                      <span>Belts</span><span class="product-number">(4923)</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="Brands">
+                <div class="brands-wrapper">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekBrand1">
+                    <label class="form-check-label" for="chekBrand1">
+                      <span>Samsung</span><span class="product-number">(1548)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekBrand2">
+                    <label class="form-check-label" for="chekBrand2">
+                      <span>Sony</span><span class="product-number">(478)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekBrand3">
+                    <label class="form-check-label" for="chekBrand3">
+                      <span>Microsoft</span><span class="product-number">(689)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekBrand4">
+                    <label class="form-check-label" for="chekBrand4">
+                      <span>Reebok</span><span class="product-number">(987)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekBrand5">
+                    <label class="form-check-label" for="chekBrand5">
+                      <span>Adidas</span><span class="product-number">(358)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekBrand6">
+                    <label class="form-check-label" for="chekBrand6">
+                      <span>Puma</span><span class="product-number">(5682)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekBrand7">
+                    <label class="form-check-label" for="chekBrand7">
+                      <span>Ajio</span><span class="product-number">(5712)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekBrand8">
+                    <label class="form-check-label" for="chekBrand8">
+                      <span>Motorola</span><span class="product-number">(657)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekBrand9">
+                    <label class="form-check-label" for="chekBrand9">
+                      <span>amazon</span><span class="product-number">(984)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekBrand10">
+                    <label class="form-check-label" for="chekBrand10">
+                      <span>Canon</span><span class="product-number">(524)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekBrand11">
+                    <label class="form-check-label" for="chekBrand11">
+                      <span>Apple</span><span class="product-number">(168)</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="chekBrand12">
+                    <label class="form-check-label" for="chekBrand12">
+                      <span>Philips</span><span class="product-number">(279)</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="Price">
+                <div class="Price w-100">
+                  <div class="Price-wrapper">
+                    <form>
+                      <div class="mb-3">
+                        <label class="form-label">Start Price</label>
+                        <input type="text" class="form-control rounded-0" value="$10">
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">End Price</label>
+                        <input type="text" class="form-control rounded-0" value="$1000">
+                      </div>
+                      <div class="mb-0 d-grid">
+                        <button type="button" class="btn btn-dark btn-ecomm">Filter</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="Colors">
+                <div class="colors">
+                  <div class="color-wrapper">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="chekColor1">
+                      <label class="form-check-label" for="chekColor1">
+                        <i class="bi bi-circle-fill me-1 text-danger"></i><span>Red</span><span
+                          class="product-number">(845)</span>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="chekColor2">
+                      <label class="form-check-label" for="chekColor2">
+                        <i class="bi bi-circle-fill me-1 text-primary"></i><span>Blue</span><span
+                          class="product-number">(257)</span>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="chekColor3">
+                      <label class="form-check-label" for="chekColor3">
+                        <i class="bi bi-circle-fill me-1 text-warning"></i><span>Yellow</span><span
+                          class="product-number">(968)</span>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="chekColor4">
+                      <label class="form-check-label" for="chekColor4">
+                        <i class="bi bi-circle-fill me-1 text-success"></i><span>Green</span><span
+                          class="product-number">(478)</span>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="chekColor5">
+                      <label class="form-check-label" for="chekColor5">
+                        <i class="bi bi-circle-fill me-1 text-info"></i><span>Skyblue</span><span
+                          class="product-number">(256)</span>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="chekColor6">
+                      <label class="form-check-label" for="chekColor6">
+                        <i class="bi bi-circle-fill me-1 text-dark"></i><span>Black</span><span
+                          class="product-number">(124)</span>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="chekColor7">
+                      <label class="form-check-label" for="chekColor7">
+                        <i class="bi bi-circle-fill me-1 text-purple"></i><span>Purple</span><span
+                          class="product-number">(897)</span>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="chekColor8">
+                      <label class="form-check-label" for="chekColor8">
+                        <i class="bi bi-circle-fill me-1 text-orange"></i><span>Orange</span><span
+                          class="product-number">(68)</span>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="chekColor9">
+                      <label class="form-check-label" for="chekColor9">
+                        <i class="bi bi-circle-fill me-1 text-cyane"></i><span>Cyane</span><span
+                          class="product-number">(784)</span>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="chekColor10">
+                      <label class="form-check-label" for="chekColor10">
+                        <i class="bi bi-circle-fill me-1 text-brown"></i><span>Brown</span><span
+                          class="product-number">(532)</span>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="chekColor11">
+                      <label class="form-check-label" for="chekColor11">
+                        <i class="bi bi-circle-fill me-1 text-ten"></i><span>Ten</span><span
+                          class="product-number">(532)</span>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="chekColor12">
+                      <label class="form-check-label" for="chekColor12">
+                        <i class="bi bi-circle-fill me-1 text-pink"></i><span>Pink</span><span
+                          class="product-number">(452)</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="DiscountRange">
+                <div class="discount-wrapper">
+                  <div class="form-check">
+                    <input class="form-check-input" name="exampleRadios" type="radio" value="option1" id="chekDisc1">
+                    <label class="form-check-label" for="chekDisc1">
+                      10% and Above
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" name="exampleRadios" type="radio" value="option2" id="chekDisc2">
+                    <label class="form-check-label" for="chekDisc2">
+                      20% and Above
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" name="exampleRadios" type="radio" value="option3" id="chekDisc3">
+                    <label class="form-check-label" for="chekDisc3">
+                      30% and Above
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" name="exampleRadios" type="radio" value="option4" id="chekDisc4">
+                    <label class="form-check-label" for="chekDisc4">
+                      40% and Above
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" name="exampleRadios" type="radio" value="option5" id="chekDisc5">
+                    <label class="form-check-label" for="chekDisc5">
+                      50% and Above
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" name="exampleRadios" type="radio" value="option6" id="chekDisc6">
+                    <label class="form-check-label" for="chekDisc6">
+                      60% and Above
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" name="exampleRadios" type="radio" value="option7" id="chekDisc7">
+                    <label class="form-check-label" for="chekDisc7">
+                      70% and Above
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" name="exampleRadios" type="radio" value="option8" id="chekDisc8">
+                    <label class="form-check-label" for="chekDisc8">
+                      80% and Above
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+        <div class="offcanvas-footer border-top">
+          <div class="hstack align-items-center justify-content-center w-100 align-items-stretch">
+            <div class="short-by w-100 d-flex align-items-center justify-content-center">
+              <a href="javascript:;" data-bs-dismiss="offcanvas" class="btn bg-transparent btn-ecomm-shop"><i
+                    class="bi bi-x-lg me-3"></i>Close</a>
+            </div>
+            <div class="vr"></div>
+            <div class="filter-btn bg-default w-100 d-flex align-items-center justify-content-center">
+              <a href="javascript:;" class="btn text-white"><i class="bi bi-check-lg me-3"></i>Apply</a>
+            </div>
+          </div>
+        </div>
+      </div>
        
       <!--start size offcanvas-->   
       <div class="offcanvas offcanvas-bottom h-auto" tabindex="-1" id="offcanvasSize">
@@ -309,12 +695,142 @@
 
 
 
+      <!--start sidenav-->
+ <div class="sidenav">
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSidenav">
+    <div class="offcanvas-header bg-default border-bottom border-light">
+      <div class="hstack gap-3">
+        <div class="">
+          <img src="assets/images/avatars/01.webp" width="45" class="rounded-3 p-1 bg-white" alt="" />
+        </div>
+        <div class="details">
+          <h6 class="mb-0 text-white">Hi! Jhon Deo</h6>
+        </div>
+      </div>
+      <div data-bs-dismiss="offcanvas"><i class="bi bi-x-lg fs-5 text-white"></i></div>
+    </div>
+    <div class="offcanvas-body p-0">
+      <nav class="sidebar-nav">
+        <ul class="metismenu" id="sidenav">
+          <li>
+            <a href="home-user.html">
+              <i class="bi bi-house-door me-2"></i>
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="has-arrow" href="javascript:;">
+              <i class="bi bi-person-circle me-2"></i>
+              Account
+            </a>
+            <ul>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="my-orders.html">My Orders</a></li>
+              <li><a href="my-profile.html">Personal Information</a></li>
+              <li><a href="addresses.html">Addresses</a></li>
+              <li><a href="notification.html">Notifications</a></li>
+              <li><a href="authentication-change-password.html">Change Password</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="has-arrow" href="javascript:;">
+              <i class="bi bi-basket3 me-2"></i>
+              Salepost Mall
+            </a>
+            <ul>
+              <li><a href="stores-list.html">Vendors</a></li>
+
+            </ul>
+          </li>
+          <li>
+            <a class="has-arrow" href="javascript:;">
+              <i class="bi bi-credit-card me-2"></i>
+              Payment
+            </a>
+            <ul>
+              <li><a href="payment-method.html">Payment Method</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="has-arrow" href="javascript:;">
+              <i class="bi bi-grid me-2"></i>
+              Coupons and Deals
+            </a>
+            <ul>
+              <li><a href="coupons.html">Active Coupons</a></li>
+              <li><a href="deals.html">Active Deals</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a class="has-arrow" href="javascript:;">
+              <i class="bi bi-star me-2"></i>
+              Customer Reviews
+            </a>
+            <ul>
+              <li><a href="reviews-and-ratings.html">Ratings & Reviews</a></li>
+              <li><a href="write-a-review.html">Write a Review</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="about-us.html">
+              <i class="bi bi-emoji-smile me-2"></i>
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="contact-us.html">
+               <i class="bi bi-headphones me-2"></i>
+               Contact Us
+             </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+</div>
+<!--end sidenav-->
 
     </div>
    <!--end wrapper-->
 
 
     <!--JS Files-->  
+
+    <script>
+    
+      const searchInput = document.getElementById('search-input');
+      const searchIcon = document.getElementById('search-icon');
+      const suggestionList = document.getElementById('suggestion-list');
+  
+      function showSuggestions() {
+          suggestionList.style.display = 'block';
+      }
+  
+      function hideSuggestions() {
+          suggestionList.style.display = 'none';
+      }
+  
+      searchInput.addEventListener('focus', showSuggestions);
+      searchInput.addEventListener('blur', hideSuggestions);
+  
+      searchIcon.addEventListener('click', showSuggestions);
+  
+      searchInput.addEventListener('keydown', function(event) {
+          if (event.key === 'Enter') {
+              event.preventDefault(); // Prevent form submission
+              window.location.href = 'shop-viewer.html';
+          }
+      });
+  
+      // Prevent hiding when clicking on the suggestion list
+      suggestionList.addEventListener('mousedown', function(event) {
+          event.preventDefault();
+      });
+  
+  </script>
+
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
     <script src="assets/js/jquery.min.js"></script>

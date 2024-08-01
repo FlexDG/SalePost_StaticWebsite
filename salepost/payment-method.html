@@ -34,32 +34,76 @@
     <div class="wrapper">
 
        <!--start to header-->
-       <header class="top-header-other fixed-top border-bottom d-flex align-items-center">
+       <header class="top-header fixed-top border-bottom d-flex-2 align-items-center">
         <nav class="navbar navbar-expand w-100 p-0 gap-3 align-items-center">
- 
-            <div class="nav-button" onclick="history.back()"><a href="javascript:;"><i class="bi bi-arrow-left"></i></a></div>
-            <div class="shop-Cart">
-              <h4 class="mb-0 fw-bold text-dark">Payment Method</h4>
-            </div>
-      
+          
+          <div class="nav-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidenav"><a href="javascript:;"><i
+                class="bi bi-list"></i></a></div>
+                <!-- <div class="nav-button" onclick="history.back()"><a href="javascript:;"><i class="bi bi-arrow-left"></i></a></div> -->
+                <div class="nav-button" onclick="history.back()"><a href="javascript:;"><i class="bi bi-arrow-left"></i></a></div>
+          <div class="brand-logo"><a href="javascript:;"><img src="assets/images/logo.png" width="145" alt=""></a></div>
+          <ul class="navbar-nav ms-auto d-flex align-items-center top-right-menu">
+            <li class="nav-item">
+              <a class="nav-link" href="wishlist.html"><i class="bi bi-heart"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative" href="cart.html">
+                <div class="cart-badge">8</div>
+                <i class="bi bi-bag"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html"><i class="bi bi-person-circle"></i></a>
+            </li>
+          </ul>
         </nav>
-       </header>
+        <div class="search-container">
+          <div class="search-bar-1">
+              <input type="text" id="search-input" placeholder="Search...">
+              <i class="bi bi-search" id="search-icon"></i>
+          </div>
+       
+          <ul class="suggestion-list" id="suggestion-list">
+              <li><a href="shop-viewer.html">Clothing and Jewelry</a></li>
+              <li><a href="category2.html">Cars & Vehicles</a></li>
+              <li><a href="category3.html">Community</a></li>
+          </ul>
+      </div>
+      </header>
         <!--end to header-->
 
       <!--start to page content-->
-       <div class="page-content">
+       <div class="page-content-contact">
 
         <h6 class="mb-3 mt-2 fw-bold text-dark rounded-3 py-2 px-3 bg-light">Credit & Debit Card</h6>
-
         <div class="card mb-3 rounded-3">
           <div class="card-body py-2">
             <div class="form-check d-flex align-items-center gap-2 mb-0">
-              <input class="form-check-input payment-input mt-0" type="radio" name="flexRadioPayment" id="flexRadioPayment2" data-bs-toggle="collapse" data-bs-target="#collapsePayment2">
+              <input class="form-check-input payment-input mt-0" type="radio" name="flexRadioPayment" id="flexRadioPayment2">
               <label class="form-check-label flex-grow-1 fw-bold text-dark" for="flexRadioPayment2">
                 Credit or Debit Card
               </label>
               <div class="form-check-label">
                 <img src="assets/images/social-icons/visa-2.webp" width="24" alt="">
+              </div>
+            </div>
+            <!-- Card input fields immediately visible -->
+            <div class="mt-3">
+              <div class="mb-3">
+                <label for="cardNumber" class="form-label">Card Number</label>
+                <input type="text" class="form-control" id="cardNumber" placeholder="Enter card number">
+              </div>
+              <div class="mb-3">
+                <label for="expiryDate" class="form-label">Expiry Date</label>
+                <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY">
+              </div>
+              <div class="mb-3">
+                <label for="cvv" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="cvv" placeholder="CVV">
+              </div>
+              <div class="mb-3">
+                <label for="cardHolderName" class="form-label">Cardholder Name</label>
+                <input type="text" class="form-control" id="cardHolderName" placeholder="Enter cardholder name">
               </div>
             </div>
           </div>
@@ -94,20 +138,8 @@
            </div>
           </div>
         </div>
-        <h6 class="mb-3 fw-bold text-dark rounded-3 py-2 px-3 bg-light">More Payment Options</h6>
-        <div class="card mb-3 rounded-3">
-          <div class="card-body py-2">
-            <div class="form-check d-flex align-items-center gap-2 mb-0">
-              <input class="form-check-input payment-input mt-0" type="radio" name="flexRadioPayment" id="flexRadioPayment0">
-              <label class="form-check-label flex-grow-1 fw-bold text-dark" for="flexRadioPayment0">
-                Cash On Delivery
-              </label>
-              <div class="form-check-label">
-                <img src="assets/images/social-icons/money-bag.webp" width="24" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
+        <h6 class="mb-3 fw-bold text-dark rounded-3 py-2 px-3 bg-light">Other Payment Options</h6>
+  
 
         <div class="card mb-3 rounded-3">
           <div class="card-body py-2">
@@ -123,32 +155,8 @@
           </div>
         </div>
 
-        <div class="card mb-3 rounded-3">
-          <div class="card-body py-2">
-            <div class="form-check d-flex align-items-center gap-2 mb-0">
-              <input class="form-check-input payment-input mt-0" type="radio" name="flexRadioPayment" id="flexRadioPayment1">
-              <label class="form-check-label flex-grow-1 fw-bold text-dark" for="flexRadioPayment1">
-                Venmo
-              </label>
-              <div class="form-check-label">
-                <img src="assets/images/icons/venmo.png" width="24" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card mb-3 rounded-3">
-          <div class="card-body py-2">
-            <div class="form-check d-flex align-items-center gap-2 mb-0">
-              <input class="form-check-input payment-input mt-0" type="radio" name="flexRadioPayment" id="flexRadioPayment1">
-              <label class="form-check-label flex-grow-1 fw-bold text-dark" for="flexRadioPayment1">
-               Google Pay
-              </label>
-              <div class="form-check-label">
-                <img src="assets/images/icons/googlepay.png" class="ms-7" width="38" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
+    
+ 
    
 
 
@@ -267,12 +275,138 @@
         </div>
       </div>
       <!--end Quantity offcanvas-->
-
+      <div class="sidenav">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSidenav">
+          <div class="offcanvas-header bg-default border-bottom border-light">
+            <div class="hstack gap-3">
+              <div class="">
+                <img src="assets/images/avatars/01.webp" width="45" class="rounded-3 p-1 bg-white" alt="" />
+              </div>
+              <div class="details">
+                <h6 class="mb-0 text-white">Hi! Jhon Deo</h6>
+              </div>
+            </div>
+            <div data-bs-dismiss="offcanvas"><i class="bi bi-x-lg fs-5 text-white"></i></div>
+          </div>
+          <div class="offcanvas-body p-0">
+            <nav class="sidebar-nav">
+              <ul class="metismenu" id="sidenav">
+                <li>
+                  <a href="home-user.html">
+                    <i class="bi bi-house-door me-2"></i>
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a class="has-arrow" href="javascript:;">
+                    <i class="bi bi-person-circle me-2"></i>
+                    Account
+                  </a>
+                  <ul>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="my-orders.html">My Orders</a></li>
+                    <li><a href="my-profile.html">Personal Information</a></li>
+                    <li><a href="addresses.html">Addresses</a></li>
+                    <li><a href="notification.html">Notifications</a></li>
+                    <li><a href="authentication-change-password.html">Change Password</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="has-arrow" href="javascript:;">
+                    <i class="bi bi-basket3 me-2"></i>
+                    Salepost Mall
+                  </a>
+                  <ul>
+                    <li><a href="stores-list.html">Vendors</a></li>
+      
+                  </ul>
+                </li>
+                <li>
+                  <a class="has-arrow" href="javascript:;">
+                    <i class="bi bi-credit-card me-2"></i>
+                    Payment
+                  </a>
+                  <ul>
+                    <li><a href="payment-method.html">Payment Method</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="has-arrow" href="javascript:;">
+                    <i class="bi bi-grid me-2"></i>
+                    Coupons and Deals
+                  </a>
+                  <ul>
+                    <li><a href="coupons.html">Active Coupons</a></li>
+                    <li><a href="deals.html">Active Deals</a></li>
+                  </ul>
+                </li>
+      
+                <li>
+                  <a class="has-arrow" href="javascript:;">
+                    <i class="bi bi-star me-2"></i>
+                    Customer Reviews
+                  </a>
+                  <ul>
+                    <li><a href="reviews-and-ratings.html">Ratings & Reviews</a></li>
+                    <li><a href="write-a-review.html">Write a Review</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="about-us.html">
+                    <i class="bi bi-emoji-smile me-2"></i>
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a href="contact-us.html">
+                     <i class="bi bi-headphones me-2"></i>
+                     Contact Us
+                   </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+      
+        </div>
+      </div>
     </div>
    <!--end wrapper-->
 
 
     <!--JS Files-->  
+
+    <script>
+
+      const searchInput = document.getElementById('search-input');
+          const searchIcon = document.getElementById('search-icon');
+          const suggestionList = document.getElementById('suggestion-list');
+      
+          function showSuggestions() {
+              suggestionList.style.display = 'block';
+          }
+      
+          function hideSuggestions() {
+              suggestionList.style.display = 'none';
+          }
+      
+          searchInput.addEventListener('focus', showSuggestions);
+          searchInput.addEventListener('blur', hideSuggestions);
+      
+          searchIcon.addEventListener('click', showSuggestions);
+      
+          searchInput.addEventListener('keydown', function(event) {
+              if (event.key === 'Enter') {
+                  event.preventDefault(); // Prevent form submission
+                  window.location.href = 'shop-viewer.html';
+              }
+          });
+      
+          // Prevent hiding when clicking on the suggestion list
+          suggestionList.addEventListener('mousedown', function(event) {
+              event.preventDefault();
+          });
+        </script>
+
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
     <script src="assets/js/jquery.min.js"></script>

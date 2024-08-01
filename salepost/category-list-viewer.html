@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Synrok - eCommerce Mobile HTML Template</title>
+    <title>Synrok - Mobile HTML Template</title>
 
     <!-- Plugins -->
     <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/metisMenu.min.css" />
@@ -34,6 +34,7 @@
     <div class="wrapper">
 
        <!--start to header-->
+   
        <header class="top-header fixed-top border-bottom d-flex-2 align-items-center">
         <nav class="navbar navbar-expand w-100 p-0 gap-3 align-items-center">
           
@@ -46,12 +47,12 @@
             <li class="nav-item">
               <a class="nav-link" href="wishlist.html"><i class="bi bi-heart"></i></a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link position-relative" href="cart.html">
                 <div class="cart-badge">8</div>
                 <i class="bi bi-bag"></i>
               </a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="authentication-log-in.html"><i class="bi bi-person-circle"></i></a>
             </li>
@@ -75,83 +76,153 @@
         <!--end to header-->
 
       <!--start to page content-->
-       <div class="page-content-contact">
+       <div class="page-content-contact mb-2">
 
-        <div class="card rounded-3 mb-3">
-          <div class="card-body">
-            <form>
-              <div class="form-body">
-                <h5 class="mb-0 fw-bold">Drop Us a Line</h5>
-                <div class="my-3 border-bottom"></div>
-                <div class="mb-3">
-                  <label class="form-label">Enter Name</label>
-                  <input type="text" class="form-control rounded-3">
-                </div>
-                <div class="mb-3">
-                  <label class="form-label">Enter Email</label>
-                  <input type="text" class="form-control rounded-3">
-                </div>
-                <div class="mb-3">
-                  <label class="form-label">Phone Number</label>
-                  <input type="text" class="form-control rounded-3">
-                </div>
-                <div class="mb-3">
-                  <label class="form-label">Message</label>
-                  <textarea class="form-control rounded-3" rows="4" cols="4"></textarea>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
+        <div class="row row-cols-2 g-3">
 
-
-        <div class="card rounded-3">
-          <div class="card-body">
-              <div class="address mb-3">
-                <h5 class="mb-0 fw-bold">Address</h5>
-                <p class="mb-0 font-12">123 Street Name, City, Australia</p>
+       
+              <div class="col">
+                <a href="shop-viewer.html">
+                  <div class="card rounded-3 mb-0">
+                    <div class="card-body">
+                       <div class="d-flex flex-column flex-column-reverse align-items-center justify-content-between gap-2">
+                          <div class="category-name">
+                            <h6 class="mb-0 fw-bold text-dark">Clothes</h6>
+                          </div>
+                          <div class="category-img">
+                            <img src="assets/images/icons/shirt-icon1.png" class="img-fluid rounded-circle" width="100" alt=""/>
+                           </div>
+                       </div>
+                    </div>
+                  </div>
+                </a>
               </div>
-              <hr>
-              <div class="phone mb-3">
-                <h5 class="mb-0 fw-bold">Phone</h5>
-                <p class="mb-0 font-13">Toll Free (123) 472-796</p>
-                <p class="mb-0 font-13">Mobile : +91-9910XXXX</p>
+              <div class="col">
+                <a href="shop-viewer.html">
+                <div class="card rounded-3 mb-0">
+                  <div class="card-body">
+                     <div class="d-flex flex-column flex-column-reverse align-items-center justify-content-between gap-2">
+                        <div class="category-name">
+                          <h6 class="mb-0 fw-bold text-dark">Vehicles</h6> 
+                        </div>
+                        <div class="category-img">
+                          <img src="https://via.placeholder.com/551X551" class="img-fluid rounded-circle" width="100" alt=""/>
+                         </div>
+                     </div>
+                  </div>
+                </div>
+              </a>
               </div>
-              <hr>
-              <div class="email mb-3">
-                <h5 class="mb-0 fw-bold">Email</h5>
-                <p class="mb-0 font-13">mail@example.com</p>
+              <div class="col">
+                <a href="shop-viewer.html">
+                <div class="card rounded-3 mb-0">
+                  <div class="card-body">
+                     <div class="d-flex flex-column flex-column-reverse align-items-center justify-content-between gap-2">
+                        <div class="category-name">
+                          <h6 class="mb-0 fw-bold text-dark">Jewelry</h6>
+                        </div>
+                        <div class="category-img">
+                          <img src="https://via.placeholder.com/551X551" class="img-fluid rounded-circle" width="100" alt=""/>
+                         </div>
+                     </div>
+                  </div>
+                </div>
+               </a>
               </div>
-              <hr>
-              <div class="working-days mb-0">
-                <h5 class="mb-0 fw-bold">Working Days</h5>
-                <p class="mb-0 font-13">Mon - FRI / 9:30 AM - 6:30 PM</p>
+              <div class="col">
+                <a href="shop-viewer.html">
+                <div class="card rounded-3 mb-0">
+                  <div class="card-body">
+                     <div class="d-flex flex-column flex-column-reverse align-items-center justify-content-between gap-2">
+                        <div class="category-name">
+                          <h6 class="mb-0 fw-bold text-dark">Electronics</h6>
+                        </div>
+                        <div class="category-img">
+                          <img src="https://via.placeholder.com/551X551" class="img-fluid rounded-circle" width="100" alt=""/>
+                         </div>
+                     </div>
+                  </div>
+                </div>
+                </a>
               </div>
-          </div>
-        </div>
-
-       </div>
+              <div class="col">
+                <a href="shop-viewer.html">
+                <div class="card rounded-3 mb-0">
+                  <div class="card-body">
+                     <div class="d-flex flex-column flex-column-reverse align-items-center justify-content-between gap-2">
+                        <div class="category-name">
+                          <h6 class="mb-0 fw-bold text-dark">Furniture</h6>
+                        </div>
+                        <div class="category-img">
+                          <img src="https://via.placeholder.com/551X551" class="img-fluid rounded-circle" width="100" alt=""/>
+                         </div>
+                     </div>
+                  </div>
+                </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="shop-viewer.html">
+                <div class="card rounded-3 mb-0">
+                  <div class="card-body">
+                     <div class="d-flex flex-column flex-column-reverse align-items-center justify-content-between gap-2">
+                        <div class="category-name">
+                          <h6 class="mb-0 fw-bold text-dark">Pets</h6>
+                        </div>
+                        <div class="category-img">
+                          <img src="https://via.placeholder.com/551X551" class="img-fluid rounded-circle" width="100" alt=""/>
+                         </div>
+                     </div>
+                  </div>
+                </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="shop-viewer.html">
+                <div class="card rounded-3 mb-0">
+                  <div class="card-body">
+                     <div class="d-flex flex-column flex-column-reverse align-items-center justify-content-between gap-2">
+                        <div class="category-name">
+                          <h6 class="mb-0 fw-bold text-dark">Accessories</h6>
+                        </div>
+                        <div class="category-img">
+                          <img src="https://via.placeholder.com/551X551" class="img-fluid rounded-circle" width="100" alt=""/>
+                         </div>
+                     </div>
+                  </div>
+                </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="shop-viewer.html">
+                <div class="card rounded-3 mb-0">
+                  <div class="card-body">
+                     <div class="d-flex flex-column flex-column-reverse align-items-center justify-content-between gap-2">
+                        <div class="category-name">
+                          <h6 class="mb-0 fw-bold text-dark">Sports</h6>
+                        </div>
+                        <div class="category-img">
+                          <img src="https://via.placeholder.com/551X551" class="img-fluid rounded-circle" width="100" alt=""/>
+                         </div>
+                     </div>
+                  </div>
+                </div>
+                </a>
+              </div>
+    
+            </div><!--end row-->
+ 
      <!--end to page content-->
 
-
-     <!--start to footer-->
-     <footer class="page-footer border-top fixed-bottom d-flex align-items-center justify-content-center bg-dark px-0">
-      <div class="d-grid w-100">
-         <a href="javascript:;" class="btn btn-ecomm w-100 block-button text-white">Send Message</a>
-      </div>
-  </footer>
-       <!--end to footer-->
-
-         <!--start sidenav-->
-    <div class="sidenav">
+     <div class="sidenav">
       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSidenav">
         <div class="offcanvas-header bg-default border-bottom border-light">
           <div class="hstack gap-3">
             <div class="">
-              <img src="assets/images/avatars/01.webp" width="45" class="rounded-3 p-1 bg-white" alt="" />
+              <img src="assets/images/avatars/account-icon.png" width="45" class="rounded-3 p-1 bg-white" alt="" />
             </div>
             <div class="details">
-              <h6 class="mb-0 text-white">Hi! Jhon Deo</h6>
+              <h6 class="mb-0 text-white">Welcome to SalePost!</h6>
             </div>
           </div>
           <div data-bs-dismiss="offcanvas"><i class="bi bi-x-lg fs-5 text-white"></i></div>
@@ -160,12 +231,12 @@
           <nav class="sidebar-nav">
             <ul class="metismenu" id="sidenav">
               <li>
-                <a href="home-user.html">
+                <a href="home-viewer.html">
                   <i class="bi bi-house-door me-2"></i>
                   Home
                 </a>
               </li>
-              <li>
+              <!-- <li>
                 <a class="has-arrow" href="javascript:;">
                   <i class="bi bi-person-circle me-2"></i>
                   Account
@@ -178,18 +249,18 @@
                   <li><a href="notification.html">Notifications</a></li>
                   <li><a href="authentication-change-password.html">Change Password</a></li>
                 </ul>
-              </li>
+              </li> -->
               <li>
                 <a class="has-arrow" href="javascript:;">
                   <i class="bi bi-basket3 me-2"></i>
                   Salepost Mall
                 </a>
                 <ul>
-                  <li><a href="stores-list.html">Vendors</a></li>
+                  <li><a href="stores-list-viewer.html">Vendors</a></li>
 
                 </ul>
               </li>
-              <li>
+              <!-- <li>
                 <a class="has-arrow" href="javascript:;">
                   <i class="bi bi-credit-card me-2"></i>
                   Payment
@@ -197,15 +268,15 @@
                 <ul>
                   <li><a href="payment-method.html">Payment Method</a></li>
                 </ul>
-              </li>
+              </li> -->
               <li>
                 <a class="has-arrow" href="javascript:;">
                   <i class="bi bi-grid me-2"></i>
                   Coupons and Deals
                 </a>
                 <ul>
-                  <li><a href="coupons.html">Active Coupons</a></li>
-                  <li><a href="deals.html">Active Deals</a></li>
+                  <!-- <li><a href="coupons.html">Active Coupons</a></li> -->
+                  <li><a href="deals-viewer.html">Active Deals</a></li>
                 </ul>
               </li>
 
@@ -215,18 +286,18 @@
                   Customer Reviews
                 </a>
                 <ul>
-                  <li><a href="reviews-and-ratings.html">Ratings & Reviews</a></li>
-                  <li><a href="write-a-review.html">Write a Review</a></li>
+                  <li><a href="reviews-and-ratings-viewer.html">Ratings & Reviews</a></li>
+                  <!-- <li><a href="write-a-review.html">Write a Review</a></li> -->
                 </ul>
               </li>
               <li>
-                <a href="about-us.html">
+                <a href="about-us-viewer.html">
                   <i class="bi bi-emoji-smile me-2"></i>
                   About Us
                 </a>
               </li>
               <li>
-                <a href="contact-us.html">
+                <a href="contact-us-viewer.html">
                    <i class="bi bi-headphones me-2"></i>
                    Contact Us
                  </a>
@@ -237,7 +308,7 @@
   
       </div>
     </div>
-    <!--end sidenav-->
+
 
     </div>
    <!--end wrapper-->
@@ -277,6 +348,7 @@
       });
   
   </script>
+
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 

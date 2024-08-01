@@ -6863,8 +6863,16 @@ textarea.form-control-lg {
 	margin-top: 4rem!important
 }
 
+.mt-deals-banner {
+	margin-top: 8.5rem!important
+}
+
 .mt-10{
 	margin-top: 11.5rem!important
+}
+
+.mt-11 {
+	margin-top: 16.5rem
 }
 
 .mt-custom-1 {
@@ -6875,6 +6883,13 @@ textarea.form-control-lg {
 	margin-top: 0.65rem!important
 }
 
+.mt-custom-3 {
+	margin-top: 9.5rem!important
+}
+
+.mt-custom-4 {
+	margin-top: 6rem!important
+}
 
 .mt-auto {
 	margin-top: auto!important
@@ -6896,6 +6911,10 @@ textarea.form-control-lg {
 }
 .me-5 {
 	margin-right: 3rem!important
+}
+
+.me-custom-4 {
+	margin-left: -1.5rem!important
 }
 
 .me-rev {
@@ -6926,6 +6945,10 @@ textarea.form-control-lg {
 
 .mb-6 {
 	margin-bottom: 5.5rem!important
+} 
+
+.mb-7 {
+	margin-bottom: 29.5rem!important
 } 
 
 .mb-auto {

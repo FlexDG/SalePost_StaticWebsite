@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="light-theme">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Synrok - Mobile HTML Template</title>
+  <title>SalePost- Mobile Version</title>
 
   <!-- Plugins -->
   <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/metisMenu.min.css" />
   <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/mm-vertical.css" />
   <link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick-theme.css" />
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/4.1.1/less.min.js"></script>
   <!--CSS Files-->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -21,6 +21,28 @@
 </head>
 
 <body>
+
+
+
+  <!--Popup-->
+  <!-- <div class="popup">
+    <div class="contentBox">
+      <div class="close"></div>
+      <div class="imgBx">
+        <img src="assets/images/icons/gift.png" alt="">
+      </div>
+      <div class="content">
+        <div>
+          <h3>Special Offer</h3>
+          <h2>80<sup>%</sup><span> Off</span></h2>
+          <p>Mollit eu minim exercitation Lorem laborum dolor quis aute.</p>
+          <a href="coupons.html">Apply for Coupon</a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
 
   <!--page loader-->
   <div class="loader-wrapper">
@@ -35,17 +57,16 @@
   <!--start wrapper-->
   <div class="wrapper">
 
+    <!--start to header-->
     <header class="top-header fixed-top border-bottom d-flex-2 align-items-center">
       <nav class="navbar navbar-expand w-100 p-0 gap-3 align-items-center">
-        
         <div class="nav-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidenav"><a href="javascript:;"><i
               class="bi bi-list"></i></a></div>
-              <!-- <div class="nav-button" onclick="history.back()"><a href="javascript:;"><i class="bi bi-arrow-left"></i></a></div> -->
-              <div class="nav-button" onclick="history.back()"><a href="javascript:;"><i class="bi bi-arrow-left"></i></a></div>
         <div class="brand-logo"><a href="javascript:;"><img src="assets/images/logo.png" width="145" alt=""></a></div>
         <ul class="navbar-nav ms-auto d-flex align-items-center top-right-menu">
+      
           <li class="nav-item">
-            <a class="nav-link" href="wishlist.html"><i class="bi bi-heart"></i></a>
+            <a class="nav-link" href="authentication-log-in.html"><i class="bi bi-heart"></i></a>
           </li>
           <li class="nav-item">
             <a class="nav-link position-relative" href="cart.html">
@@ -56,6 +77,7 @@
           <li class="nav-item">
             <a class="nav-link" href="profile.html"><i class="bi bi-person-circle"></i></a>
           </li>
+
         </ul>
       </nav>
       <div class="search-container">
@@ -76,201 +98,560 @@
     <!--end to header-->
 
     <!--start to page content-->
-    <div class="page-content mt-deals-banner">
+    <div class="page-content">
+
+
+      <div class="py-2"></div>
       <!--start banner slider-->
-      <div class="page-banner-2 mb-6 mt-0">
-                <div class="card bg-transparent">
-                  <div class="card-body ms-3 mt-6">
-                    <div class="d-flex flex-row gap-3 align-items-start">     
-                    </div>
-                  </div>
-                </div>
-        
-                 </div>
+
+      <div class="banner-slider">
+        <div class="banner-item">
+          <a href="shop.html"><img src="assets/images/banner-sliders/laptop.png" class="img-fluid rounded-3" alt=""></a>
+        </div>
+        <div class="banner-item">
+          <a href="shop.html"><img src="assets/images/banner-sliders/01.webp" class="img-fluid rounded-3" alt=""></a>
+        </div>
+
+        <div class="banner-item">
+          <a href="shop.html"><img src="assets/images/banner-sliders/04.webp" class="img-fluid rounded-3" alt=""></a>
+        </div>
+        <div class="banner-item">
+          <a href="shop.html"><img src="assets/images/banner-sliders/05.webp" class="img-fluid rounded-3" alt=""></a>
+        </div>
+        <div class="banner-item">
+          <a href="shop.html"><img src="assets/images/banner-sliders/06.webp" class="img-fluid rounded-3" alt=""></a>
+        </div>
+      </div>
 
       <!--end banner slider-->
 
-      <!--start produt grid-->
- 
-      <div class="timer fw-bold mb-3 py-2 mt-10 mt-3 rounded-3 px-3 bg-light">
-        <span class="time days" id="days">0d</span>
-        <span class="time hours" id="hours">0h</span>
-        <span class="time minutes" id="minutes">0m</span>
-        <span class="time seconds" id="seconds">0s</span>
-    </div>
- 
-  <h6 class="deals-title fw-bold">Ends In:</h6>
+      <!--start category-->
+      <div class="category">
+        <div class="d-flex align-items-center gap-3 justify-content-between">
+          <div class="category-img">
+            <figure>
+              <a href="shop.html">
+                <img src="assets/images/icons/shirt-icon1.png" class="img-fluid-3 rounded-circle-2" alt="">
+              </a>
+              <figcaption>Clothes</figcaption>
+            </figure>
+          </div>
+       
+          <div class="category-img">
+            <figure>
+              <a href="shop.html">
+                <img src="assets/images/icons/bag-icon1.png" class="img-fluid-3 rounded-circle-2" alt="">
+              </a>
+              <figcaption>Bags</figcaption>
+            </figure>
+          </div>
+          
+          <div class="category-img">
+            <figure>
+              <a href="shop.html">
+                <img src="assets/images/icons/shoes-icon1.png" class="img-fluid-3 rounded-circle-2" alt="">
+              </a>
+              <figcaption>Shoes</figcaption>
+            </figure>
+          </div>
+          <div class="category-img">
+            <figure>
+              <a href="shop.html">
+                <img src="assets/images/icons/assorted-icon.png" class="img-fluid-3 rounded-circle-2" alt="">
+              </a>
+              <figcaption>Variety</figcaption>
+            </figure>
+          </div>
 
-      <div class="card rounded-3 mb-3 mt-3">
-        <div class="card-body">
-          <div class="d-flex flex-row gap-3 align-items-start">
-            <div class="noti-box mb-1">
-              <div class="category-img">
-                <figure>
-                    <img src="assets/images/category/01.webp" class="img-fluid-4 rounded-circle" alt="">
-                </figure>
-              </div>
-            </div>
-            <div class="visit-stores-con mt-custom-1">
-              <h6 class="text-dark fw-bold">Salepost Apparel</h6>
-              
-            </div>
-            <div class="short-by mt-custom-2">
-              <a href="store-products.html"class="btn btn-ecomm-visit">Visit Store</a>
-          </div>
-          </div>
         </div>
       </div>
-      <div class="cart-list d-flex flex-column gap-4">
+      <div class="category-2">
+        <div class="d-flex align-items-center gap-3 justify-content-between">
+          <div class="category-img">
+            <figure>
+              <a href="shop.html">
 
-        <div class="card rounded-3 border-0 overflow-hidden">
-          <a href="product-details.html"> <i class="bi bi-cart-plus cart-deal-icon float-right"></i></a>
-          <div class="short-by">
-            <a href="" class="selling-fast-wrapper">SELLING FAST</a>
+                <img src="assets/images/icons/technology.png" class="img-fluid-3 rounded-circle-2" alt="">
+              </a>
+              <figcaption>Technology</figcaption>
+            </figure>
           </div>
-          <div class="card-body">
-            <div class="d-flex flex-row align-items-start align-items-stretch gap-3">
-              <div class="product-img">
-                <img src="assets/images/trending-shoes/01.webp" class="rounded-3" width="100" alt="">
-              </div>
-              <div class="product-info flex-grow-1">
-                <h6 class="fw-bold mb-0 text-dark">Checked Kurta</h6>
-                <div class="product-price d-flex align-items-center gap-2 mt-2">
-                  <div class="fw-bold text-dark">$458</div>
-                  <div class="fw-light text-muted text-decoration-line-through">$2089</div>
-                </div>
-                <div class="fw-bold text-danger">(70% off)</div>
-                <div class="ratings mt-2">
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-        </div>
-        
-      </div>
+          <div class="category-img">
+            <figure>
+              <a href="shop.html">
 
-      <div class="card rounded-3 mb-3 mt-4">
-        <div class="card-body">
-          <div class="d-flex flex-row gap-3 align-items-start">
-            <div class="noti-box mb-1">
-              <div class="category-img">
-                <figure>
-                    <img src="assets/images/category/01.webp" class="img-fluid-4 rounded-circle" alt="">
-                </figure>
-              </div>
-            </div>
-            <div class="visit-stores-con mt-custom-1">
-              <h6 class="text-dark fw-bold">Salepost Apparel</h6>
-              
-            </div>
-            <div class="short-by mt-custom-2">
-              <a href="store-products.html"class="btn btn-ecomm-visit">Visit Store</a>
+                <img src="assets/images/icons/furniture.png" class="img-fluid-3 rounded-circle-2" alt="">
+              </a>
+              <figcaption>Furniture</figcaption>
+            </figure>
           </div>
+          <div class="category-img">
+            <figure>
+              <a href="shop.html">
+                <img src="assets/images/icons/accessory-icon1.png" class="img-fluid-3 rounded-circle-2" alt="">
+              </a>
+              <figcaption>Accessories</figcaption>
+            </figure>
           </div>
+    
+          <div class="category-img">
+            <figure>
+              <a href="category-list.html">
+                <img src="assets/images/icons/all-icon.png" class="img-fluid-3 rounded-circle-2" alt="">
+              </a>
+              <figcaption>All</figcaption>
+            </figure>
+          </div>
+
         </div>
       </div>
-      <div class="cart-list d-flex flex-column gap-4">
 
-        <div class="card rounded-3 border-0 overflow-hidden">
-          <a href="product-details.html"> <i class="bi bi-cart-plus cart-deal-icon float-right"></i></a>
-          <div class="short-by">
-            <a href="" class="selling-fast-wrapper">SELLING FAST</a>
-          </div>
-          <div class="card-body">
-            <div class="d-flex flex-row align-items-start align-items-stretch gap-3">
-              <div class="product-img">
-                <img src="assets/images/trending-shoes/01.webp" class="rounded-3" width="100" alt="">
-              </div>
-              <div class="product-info flex-grow-1">
-                <h6 class="fw-bold mb-0 text-dark">Checked Kurta</h6>
-                <div class="product-price d-flex align-items-center gap-2 mt-2">
-                  <div class="fw-bold text-dark">$458</div>
-                  <div class="fw-light text-muted text-decoration-line-through">$2089</div>
-                </div>
-                <div class="fw-bold text-danger">(70% off)</div>
-                <div class="ratings mt-2">
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-        </div>
-        
-        <div class="card rounded-3 border-0 overflow-hidden">
-          <a href="product-details.html"> <i class="bi bi-cart-plus cart-deal-icon float-right"></i></a>
-          <div class="short-by">
-            <a href="" class="selling-fast-wrapper">SELLING FAST</a>
-          </div>
-          <div class="card-body">
-            <div class="d-flex flex-row align-items-start align-items-stretch gap-3">
-              <div class="product-img">
-                <img src="assets/images/trending-shoes/01.webp" class="rounded-3" width="100" alt="">
-              </div>
-              <div class="product-info flex-grow-1">
-                <h6 class="fw-bold mb-0 text-dark">Checked Kurta</h6>
-                <div class="product-price d-flex align-items-center gap-2 mt-2">
-                  <div class="fw-bold text-dark">$458</div>
-                  <div class="fw-light text-muted text-decoration-line-through">$2089</div>
-                </div>
-                <div class="fw-bold text-danger">(70% off)</div>
-                <div class="ratings mt-2">
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
-                  <i class="bi bi-star-fill text-warning"></i>
+      <!--end category-->
+
+      <div class="py-2"></div>
+      
+
+      <div class="sales-category-wrapper">
+        <h4 class="my-2 text-start fw-bold section-title">Best Sellers</h4>
+        <div class="sales-category-slider">
+          <div class="card rounded-0 rounded-3 overflow-hidden">
+           <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon float-right-2"></i></a>
+           <a href="shop.html"><i class="bi bi-cart-plus homepage-buy-icon float-right"></i></a>
+
+            <a href="product-details.html"><img src="assets/images/other/01.png" class="img-fluid-2"
+                alt=""></a>
+
+            <div class="card-body text-start">
+              <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
+              <div class="price-rating d-flex justify-content-between align-items-center">
+                <p class="mb-0 fw-light pri">$200.00</p>
+                <div class="ratings d-flex align-items-center">
+                  <i class="bi bi-star-fill star-fill-icon"></i>
+                  <p class="mb-0 fw-light pri">5.0</p>
                 </div>
               </div>
             </div>
           </div>
-          <hr>
+          <div class="card rounded-0 rounded-3 overflow-hidden">
+            <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon float-right-2"></i></a>
+            <a href="shop.html"><i class="bi bi-cart-plus homepage-buy-icon float-right"></i></a>
+
+            <a href="product-details.html"><img src="assets/images/trending-shoes/02.webp" class="img-fluid-2" alt=""></a>
+            <div class="card-body text-start">
+              <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
+              <div class="price-rating d-flex justify-content-between align-items-center">
+                <p class="mb-0 fw-light pri">$200.00</p>
+                <div class="ratings d-flex align-items-center">
+                  <i class="bi bi-star-fill star-fill-icon"></i>
+                  <p class="mb-0 fw-light pri">5.0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card rounded-0 rounded-3 overflow-hidden">
+            <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon float-right-2"></i></a>
+            <a href="shop.html"><i class="bi bi-cart-plus homepage-buy-icon float-right"></i></a>
+
+            <a href="product-details.html"><img src="assets/images/other/02.png" class="img-fluid-2" alt=""></a>
+            <div class="card-body text-start">
+              <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
+              <div class="price-rating d-flex justify-content-between align-items-center">
+                <p class="mb-0 fw-light pri">$200.00</p>
+                <div class="ratings d-flex align-items-center">
+                  <i class="bi bi-star-fill star-fill-icon"></i>
+                  <p class="mb-0 fw-light pri">5.0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card rounded-0 rounded-3 overflow-hidden">
+            <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon float-right-2"></i></a>
+            <a href="shop.html"><i class="bi bi-cart-plus homepage-buy-icon float-right"></i></a>
+
+            <a href="product-details.html"><img src="assets/images/accessories/02.webp" class="img-fluid-2" alt=""></a>
+            <div class="card-body text-start">
+              <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
+              <div class="price-rating d-flex justify-content-between align-items-center">
+                <p class="mb-0 fw-light pri">$200.00</p>
+                <div class="ratings d-flex align-items-center">
+                  <i class="bi bi-star-fill star-fill-icon"></i>
+                  <p class="mb-0 fw-light pri">5.0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card rounded-0 rounded-3 overflow-hidden">
+            <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon float-right-2"></i></a>
+            <a href="shop.html"><i class="bi bi-cart-plus homepage-buy-icon float-right"></i></a>
+
+            <a href="product-details.html"><img src="assets/images/similar/05.webp" class="img-fluid-2" alt=""></a>
+            <div class="card-body text-start">
+              <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
+              <div class="price-rating d-flex justify-content-between align-items-center">
+                <p class="mb-0 fw-light pri">$200.00</p>
+                <div class="ratings d-flex align-items-center">
+                  <i class="bi bi-star-fill star-fill-icon"></i>
+                  <p class="mb-0 fw-light pri">5.0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card rounded-0 rounded-3 overflow-hidden">
+            <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon float-right-2"></i></a>
+            <a href="shop.html"><i class="bi bi-cart-plus homepage-buy-icon float-right"></i></a>
+
+            <a href="product-details.html"><img src="assets/images/similar/01.webp" class="img-fluid-2" alt=""></a>
+            <div class="card-body text-start">
+              <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
+              <div class="price-rating d-flex justify-content-between align-items-center">
+                <p class="mb-0 fw-light pri">$200.00</p>
+                <div class="ratings d-flex align-items-center">
+                  <i class="bi bi-star-fill star-fill-icon"></i>
+                  <p class="mb-0 fw-light pri">5.0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
- 
       </div>
 
-      <!--end produt grid-->
+      <div class="sales-category-wrapper">
+        <h4 class="my-2 text-start fw-bold section-title">Top Brands</h4>
+        <div class="brands-slider">
+          <div class="card rounded-3">
+            <div class="card-body">
+              <img src="assets/images/brands/01.webp" class="img-fluid" alt=""> 
+            </div>
+          </div>
+          <div class="card rounded-3">
+            <div class="card-body">
+           <img src="assets/images/brands/02.webp" class="img-fluid" alt=""> 
+            </div>
+          </div>
+          <div class="card rounded-3">
+            <div class="card-body">
+             <img src="assets/images/brands/03.webp" class="img-fluid" alt=""> 
+            </div>
+          </div>
+          <div class="card rounded-3">
+            <div class="card-body">
+            <img src="assets/images/brands/04.webp" class="img-fluid" alt=""> 
+            </div>
+          </div>
+          <div class="card rounded-3">
+            <div class="card-body">
+             <img src="assets/images/brands/05.webp" class="img-fluid" alt=""> 
+            </div>
+          </div>
+          <div class="card rounded-3">
+            <div class="card-body">
+              <img src="assets/images/brands/06.webp" class="img-fluid" alt=""> 
+            </div>
+          </div>
+          <div class="card rounded-3">
+            <div class="card-body">
+             <img src="assets/images/brands/07.webp" class="img-fluid" alt=""> 
+            </div>
+          </div>
+          <div class="card rounded-3">
+            <div class="card-body">
+           <img src="assets/images/brands/08.webp" class="img-fluid" alt=""> 
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="py-2"></div>
+
+      <div class="sales-category-wrapper">
+        <h4 class="my-2 text-start fw-bold section-title">Featured Products</h4>
+        <div class="sales-category-slider">
+          <div class="card rounded-0 rounded-3 overflow-hidden">
+            <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon float-right-2"></i></a>
+            <i class="bi bi-cart-plus homepage-buy-icon float-right"></i>
+
+            <a href="product-details.html"><img src="assets/images/trending-shoes/01.webp" class="img-fluid-2"
+                alt=""></a>
+            <div class="card-body text-start">
+              <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
+              <div class="price-rating d-flex justify-content-between align-items-center">
+                <p class="mb-0 fw-light pri">$200.00</p>
+                <div class="ratings d-flex align-items-center">
+                  <i class="bi bi-star-fill star-fill-icon"></i>
+                  <p class="mb-0 fw-light pri">5.0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card rounded-0 rounded-3 overflow-hidden">
+            <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon float-right-2"></i></a>
+            <a href="shop.html"><i class="bi bi-cart-plus homepage-buy-icon float-right"></i></a>
+
+            <a href="product-details.html"><img src="assets/images/trending/04.webp" class="img-fluid-2" alt=""></a>
+            <div class="card-body text-start">
+              <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
+              <div class="price-rating d-flex justify-content-between align-items-center">
+                <p class="mb-0 fw-light pri">$200.00</p>
+                <div class="ratings d-flex align-items-center">
+                  <i class="bi bi-star-fill star-fill-icon"></i>
+                  <p class="mb-0 fw-light pri">5.0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card rounded-0 rounded-3 overflow-hidden">
+            <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon float-right-2"></i></a>
+            <a href="shop.html"><i class="bi bi-cart-plus homepage-buy-icon float-right"></i></a>
+
+            <a href="product-details.html"><img src="assets/images/shop/09.webp" class="img-fluid-2" alt=""></a>
+            <div class="card-body text-start">
+              <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
+              <div class="price-rating d-flex justify-content-between align-items-center">
+                <p class="mb-0 fw-light pri">$200.00</p>
+                <div class="ratings d-flex align-items-center">
+                  <i class="bi bi-star-fill star-fill-icon"></i>
+                  <p class="mb-0 fw-light pri">5.0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card rounded-0 rounded-3 overflow-hidden">
+            <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon float-right-2"></i></a>
+            <a href="shop.html"><i class="bi bi-cart-plus homepage-buy-icon float-right"></i></a>
+
+            <a href="product-details.html"><img src="assets/images/accessories/02.webp" class="img-fluid-2" alt=""></a>
+            <div class="card-body text-start">
+              <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
+              <div class="price-rating d-flex justify-content-between align-items-center">
+                <p class="mb-0 fw-light pri">$200.00</p>
+                <div class="ratings d-flex align-items-center">
+                  <i class="bi bi-star-fill star-fill-icon"></i>
+                  <p class="mb-0 fw-light pri">5.0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card rounded-0 rounded-3 overflow-hidden">
+            <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon float-right-2"></i></a>
+            <a href="shop.html"><i class="bi bi-cart-plus homepage-buy-icon float-right"></i></a>
+
+            <a href="product-details.html"><img src="assets/images/similar/05.webp" class="img-fluid-2" alt=""></a>
+            <div class="card-body text-start">
+              <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
+              <div class="price-rating d-flex justify-content-between align-items-center">
+                <p class="mb-0 fw-light pri">$200.00</p>
+                <div class="ratings d-flex align-items-center">
+                  <i class="bi bi-star-fill star-fill-icon"></i>
+                  <p class="mb-0 fw-light pri">5.0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card rounded-0 rounded-3 overflow-hidden">
+            <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon float-right-2"></i></a>
+            <a href="shop.html"><i class="bi bi-cart-plus homepage-buy-icon float-right"></i></a>
+
+            <a href="product-details.html"><img src="assets/images/similar/01.webp" class="img-fluid-2" alt=""></a>
+            <div class="card-body text-start">
+              <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
+              <div class="price-rating d-flex justify-content-between align-items-center">
+                <p class="mb-0 fw-light pri">$200.00</p>
+                <div class="ratings d-flex align-items-center">
+                  <i class="bi bi-star-fill star-fill-icon"></i>
+                  <p class="mb-0 fw-light pri">5.0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="py-2"></div>
+      <div class="banner-slider-2">
+        <div class="banner-item">
+          <h4 class="my-2 text-start fw-bold section-title">Flash Deals</h4>
+          <a href="deals.html"><button class="btn banner-btn-ecomm">Shop Now</button></a>
+         <img src="assets/images/banner-sliders/02.webp" class="img-fluid rounded-3" alt=""> 
+        </div>
+      </div>
+
+
+      <!--start trending category-->
+
+      <!--end trending category-->
+
+      <div class="py-2"></div>
+
+      <div class="trending-category">
+        <h4 class="my-2 text-start fw-bold section-title">New Arrivals</h4>
+        <div class="row row-cols-2 row-cols-md-3 g-3">
+          <div class="col d-flex">
+            <div class="card rounded-0 w-100 rounded-3 overflow-hidden">
+              <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+              <a href="shop.html">  <i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
+
+              <a href="product-details.html"><img src="assets/images/other/03.png" class="img-fluid" alt=""></a>
+
+              <div class="card-body text-start">
+                <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
+                <div class="price-rating d-flex justify-content-between align-items-center">
+                  <p class="mb-0 fw-light pri">$200.00</p>
+                  <div class="ratings d-flex align-items-center">
+                    <i class="bi bi-star-fill star-fill-icon"></i>
+                    <p class="mb-0 fw-light pri">5.0</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col d-flex">
+            <div class="card rounded-0 w-100 rounded-3 overflow-hidden">
+              <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+              <a href="shop.html">  <i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
+
+              <a href="product-details.html"><img src="assets/images/trending/06.webp" class="img-fluid" alt=""></a>
+
+              <div class="card-body text-start">
+                <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
+                <div class="price-rating d-flex justify-content-between align-items-center">
+                  <p class="mb-0 fw-light pri">$200.00</p>
+                  <div class="ratings d-flex align-items-center">
+                    <i class="bi bi-star-fill star-fill-icon"></i>
+                    <p class="mb-0 fw-light pri">5.0</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col d-flex">
+            <div class="card rounded-0 w-100 rounded-3 overflow-hidden">
+              <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+              <a href="shop.html">  <i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
+
+              <a href="product-details.html"><img src="assets/images/accessories/03.webp" class="img-fluid" alt=""></a>
+
+              <div class="card-body text-start">
+                <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
+                <div class="price-rating d-flex justify-content-between align-items-center">
+                  <p class="mb-0 fw-light pri">$200.00</p>
+                  <div class="ratings d-flex align-items-center">
+                    <i class="bi bi-star-fill star-fill-icon"></i>
+                    <p class="mb-0 fw-light pri">5.0</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col d-flex">
+            <div class="card rounded-0 w-100 rounded-3 overflow-hidden">
+              <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+              <a href="shop.html">  <i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
+
+              <a href="product-details.html"><img src="assets/images/shop/03.webp" class="img-fluid" alt=""></a>
+
+              <div class="card-body text-start">
+                <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
+                <div class="price-rating d-flex justify-content-between align-items-center">
+                  <p class="mb-0 fw-light pri">$200.00</p>
+                  <div class="ratings d-flex align-items-center">
+                    <i class="bi bi-star-fill star-fill-icon"></i>
+                    <p class="mb-0 fw-light pri">5.0</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col d-flex">
+            <div class="card rounded-0 w-100 rounded-3 overflow-hidden">
+              <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+              <a href="shop.html">  <i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
+
+              <a href="product-details.html"><img src="assets/images/similar/05.webp" class="img-fluid" alt=""></a>
+
+              <div class="card-body text-start">
+                <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
+                <div class="price-rating d-flex justify-content-between align-items-center">
+                  <p class="mb-0 fw-light pri">$200.00</p>
+                  <div class="ratings d-flex align-items-center">
+                    <i class="bi bi-star-fill star-fill-icon"></i>
+                    <p class="mb-0 fw-light pri">5.0</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col d-flex">
+            <div class="card rounded-0 w-100 rounded-3 overflow-hidden">
+              <a href="wishlist.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
+              <a href="shop.html">  <i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
+
+              <a href="product-details.html"><img src="assets/images/shop/08.webp" class="img-fluid" alt=""></a>
+              <div class="card-body text-start">
+                <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
+                <div class="price-rating d-flex justify-content-between align-items-center">
+                  <p class="mb-0 fw-light pri">$200.00</p>
+                  <div class="ratings d-flex align-items-center">
+                    <i class="bi bi-star-fill star-fill-icon"></i>
+                    <p class="mb-0 fw-light pri">5.0</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+       
 
     </div>
     <!--end to page content-->
 
 
     <!--start to footer-->
+    <footer class="page-footer fixed-bottom border-top d-flex align-items-center">
+      <nav class="navbar navbar-expand p-0 flex-grow-1">
+        <div class="navbar-nav align-items-center justify-content-between w-100">
+          <a class="nav-link" href="home-user.html">
+            <div class="d-flex flex-column align-items-center">
+              <div class="icon"><i class="bi bi-house-fill"></i></div>
+              <div class="name">Home</div>
+            </div>
+          </a>
+          <a class="nav-link" href="notification.html">
+            <div class="d-flex flex-column align-items-center">
+              <div class="icon"><i class="bi bi-bell"></i></div>
+              <div class="name">Notifications</div>
+            </div>
+          </a>
+          <a class="nav-link" href="cart.html">
+            <div class="d-flex flex-column align-items-center">
+              <div class="icon"><i class="bi bi-bag"></i></div>
+              <div class="name">Cart</div>
+            </div>
+          </a>
+          <a class="nav-link" href="chat-inbox.html">
+            <div class="d-flex flex-column align-items-center">
+              <div class="icon"><i class="bi bi-inbox"></i></div>
+              <div class="name">Inbox</div>
+            </div>
+          </a>
+
+        </div>
+      </nav>
+    </footer>
 
     <!--end to footer-->
-
- 
-
-
-
-    <!--start sort by offcanvas-->
-    <div class="offcanvas offcanvas-bottom h-auto" tabindex="-1" id="offcanvasSortBy">
-      <div class="offcanvas-header border-bottom justify-content-center">
-        <h6 class="offcanvas-title mb-0 fw-bold text-uppercase text-dark">Sort By</h6>
-      </div>
-      <div class="offcanvas-body p-0">
-        <ul class="list-group list-group-flush text-center">
-          <li class="list-group-item fw-bold text-uppercase">Price: Low to High</li>
-          <li class="list-group-item fw-bold text-uppercase">Price: High to Low</li>
-          <li class="list-group-item fw-bold text-uppercase">Discount</li>
-          <li class="list-group-item fw-bold text-uppercase">Popularity</li>
-          <li class="list-group-item fw-bold text-uppercase">Newest</li>
-        </ul>
-      </div>
-    </div>
-    <!--end short by offcanvas-->
-
-
     <!--start filter by offcanvas-->
     <div class="offcanvas offcanvas-bottom h-100 border-top-0" tabindex="-1" id="offcanvasFilter">
       <div class="offcanvas-header border-bottom justify-content-center">
@@ -619,26 +1000,21 @@
 
       </div>
       <div class="offcanvas-footer border-top">
-        <div class="hstack align-items-center justify-content-center gap-3 w-100">
-          <div class="short-by p-3">
-            <a href="javascript:;" data-bs-dismiss="offcanvas" class="btn btn-ecomm-filter p-0"><i
-                class="bi bi-x-lg me-3"></i>Close</a>
+        <div class="hstack align-items-center justify-content-center w-100 align-items-stretch">
+          <div class="short-by w-100 d-flex align-items-center justify-content-center">
+            <a href="javascript:;" data-bs-dismiss="offcanvas" class="btn bg-transparent btn-ecomm-shop"><i
+                  class="bi bi-x-lg me-3"></i>Close</a>
           </div>
           <div class="vr"></div>
-          <div class="filter-btn p-3">
-            <a href="javascript:;" class="btn btn-ecomm-filter p-0"><i class="bi bi-check-lg me-3"></i>Apply</a>
+          <div class="filter-btn bg-default w-100 d-flex align-items-center justify-content-center">
+            <a href="javascript:;" class="btn text-white"><i class="bi bi-check-lg me-3"></i>Apply</a>
           </div>
         </div>
       </div>
     </div>
     <!--end filter offcanvas-->
 
-
-    <!--start Similar Products-->
-
-    <!--end Similar Products-->
-
-    
+    <!--start sidenav-->
     <div class="sidenav">
       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSidenav">
         <div class="offcanvas-header bg-default border-bottom border-light">
@@ -734,43 +1110,15 @@
       </div>
     </div>
     <!--end sidenav-->
-
   </div>
   <!--end wrapper-->
 
-  
+
   <!--JS Files-->
 
-
-      <script>
-
-    const daysElement = document.getElementById("days");
-const hoursElement = document.getElementById("hours");
-const minutesElement = document.getElementById("minutes");
-const secondsElement = document.getElementById("seconds");
-
-function updateTimer() {
-  const now = new Date().getTime();
-  const referenceDate = new Date('2024-07-28T00:00:00').getTime();
-  const weekDuration = 7 * 24 * 60 * 60 * 1000;
-  const timePassed = now - referenceDate;
-  const timeRemaining = weekDuration - (timePassed % weekDuration);
-
-  const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-  daysElement.innerHTML = `${days}d`;
-  hoursElement.innerHTML = `${hours}h`;
-  minutesElement.innerHTML = `${minutes}m`;
-  secondsElement.innerHTML = `${seconds}s`;
-}
-
-setInterval(updateTimer, 1000);
-updateTimer();
-
-const searchInput = document.getElementById('search-input');
+  <script>
+    
+    const searchInput = document.getElementById('search-input');
     const searchIcon = document.getElementById('search-icon');
     const suggestionList = document.getElementById('suggestion-list');
 
@@ -798,7 +1146,8 @@ const searchInput = document.getElementById('search-input');
     suggestionList.addEventListener('mousedown', function(event) {
         event.preventDefault();
     });
-  </script>
+
+</script>
 
   <script src="assets/js/bootstrap.bundle.min.js"></script>
 
@@ -809,6 +1158,7 @@ const searchInput = document.getElementById('search-input');
   <script src="assets/js/main.js"></script>
   <script src="assets/js/index.js"></script>
   <script src="assets/js/loader.js"></script>
+
 </body>
 
 </html>
