@@ -44,7 +44,7 @@
           <div class="brand-logo"><a href="javascript:;"><img src="assets/images/logo.png" width="145" alt=""></a></div>
           <ul class="navbar-nav ms-auto d-flex align-items-center top-right-menu">
             <li class="nav-item">
-              <a class="nav-link" href="wishlist.html"><i class="bi bi-heart"></i></a>
+              <a class="nav-link" href="authentication-log-in.html"><i class="bi bi-heart"></i></a>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link position-relative" href="cart.html">
@@ -59,11 +59,18 @@
         </nav>
         <div class="search-container">
           <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <i class="bi bi-search"></i>
+              <input type="text" id="search-input" placeholder="Search...">
+              <i class="bi bi-search" id="search-icon"></i>
           </div>
-          <a href="#offcanvasFilter" data-bs-toggle="offcanvas"> <i class="bi bi-filter filter-icon"></i> </i></a>
-        </div>
+          <a href="#offcanvasFilter" data-bs-toggle="offcanvas"> 
+              <i class="bi bi-filter filter-icon"></i>
+          </a>
+          <ul class="suggestion-list" id="suggestion-list">
+              <li><a href="shop-viewer.html">Clothing and Jewelry</a></li>
+              <li><a href="category2.html">Cars & Vehicles</a></li>
+              <li><a href="category3.html">Community</a></li>
+          </ul>
+      </div>
       </header>
         <!--end to header-->
 
@@ -236,6 +243,41 @@
 
 
     <!--JS Files-->  
+
+
+    <script>
+    
+      const searchInput = document.getElementById('search-input');
+      const searchIcon = document.getElementById('search-icon');
+      const suggestionList = document.getElementById('suggestion-list');
+  
+      function showSuggestions() {
+          suggestionList.style.display = 'block';
+      }
+  
+      function hideSuggestions() {
+          suggestionList.style.display = 'none';
+      }
+  
+      searchInput.addEventListener('focus', showSuggestions);
+      searchInput.addEventListener('blur', hideSuggestions);
+  
+      searchIcon.addEventListener('click', showSuggestions);
+  
+      searchInput.addEventListener('keydown', function(event) {
+          if (event.key === 'Enter') {
+              event.preventDefault(); // Prevent form submission
+              window.location.href = 'shop-viewer.html';
+          }
+      });
+  
+      // Prevent hiding when clicking on the suggestion list
+      suggestionList.addEventListener('mousedown', function(event) {
+          event.preventDefault();
+      });
+  
+  </script>
+
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
     <script src="assets/js/jquery.min.js"></script>

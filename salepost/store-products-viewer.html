@@ -58,11 +58,18 @@
         </nav>
         <div class="search-container">
           <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <i class="bi bi-search"></i>
+              <input type="text" id="search-input" placeholder="Search...">
+              <i class="bi bi-search" id="search-icon"></i>
           </div>
-          <a href="#offcanvasFilter" data-bs-toggle="offcanvas"> <i class="bi bi-filter filter-icon"></i> </i></a>
-        </div>
+          <a href="#OrderFilterCanvas" data-bs-toggle="offcanvas"> 
+              <i class="bi bi-filter filter-icon"></i>
+          </a>
+          <ul class="suggestion-list" id="suggestion-list">
+              <li><a href="shop-viewer.html">Clothing and Jewelry</a></li>
+              <li><a href="category2.html">Cars & Vehicles</a></li>
+              <li><a href="category3.html">Community</a></li>
+          </ul>
+      </div>
       </header>
         <!--end to header-->
  
