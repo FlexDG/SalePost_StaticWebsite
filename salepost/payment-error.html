@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Synrok - Mobile HTML Template</title>
+    <title>SalePost- Mobile Version</title>
 
     <!-- Plugins -->
     <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/metisMenu.min.css" />
@@ -39,9 +39,8 @@
           
           <div class="nav-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidenav"><a href="javascript:;"><i
                 class="bi bi-list"></i></a></div>
-                <!-- <div class="nav-button" onclick="history.back()"><a href="javascript:;"><i class="bi bi-arrow-left"></i></a></div> -->
-                <div class="nav-button" onclick="history.back()"><a href="javascript:;"><i class="bi bi-arrow-left"></i></a></div>
-          <div class="brand-logo"><a href="javascript:;"><img src="assets/images/logo.png" width="145" alt=""></a></div>
+
+          <div class="brand-logo"><a href="home-user.html"><img src="assets/images/logo.png" width="145" alt=""></a></div>
           <ul class="navbar-nav ms-auto d-flex align-items-center top-right-menu">
             <li class="nav-item">
               <a class="nav-link" href="wishlist.html"><i class="bi bi-heart"></i></a>
@@ -58,17 +57,29 @@
           </ul>
         </nav>
         <div class="search-container">
-          <div class="search-bar-1">
-              <input type="text" id="search-input" placeholder="Search...">
-              <i class="bi bi-search" id="search-icon"></i>
+          <div class="search-bar">
+            <div id="select">
+              <p id="selectText"> All Categories</p>
+              <i class="bi bi-arrow-down text-white"></i>
+              <!-- <img src="assets/images/icons/arrow-down.png" alt=""> -->
+              <ul id="dropdown-list">
+                <li class="options">All Categories</li>
+                <li class="options">Electronics</li>
+                <li class="options">Furniture</li>
+                <li class="options">Sports</li>
+                <li class="options">Fashion</li>
+                <li class="options">Jewelry</li>
+                <li class="options">Literature</li>
+                <li class="options">Community</li>
+                <li class="options">Pets</li>
+                <li class="options">Vehicles</li>
+              </ul>
+            </div>
+            <input type="text" id="inputfield" placeholder="Search...">
+            <i class="bi bi-search" id="search-icon"></i>
           </div>
-       
-          <ul class="suggestion-list" id="suggestion-list">
-              <li><a href="shop-viewer.html">Clothing and Jewelry</a></li>
-              <li><a href="category2.html">Cars & Vehicles</a></li>
-              <li><a href="category3.html">Community</a></li>
-          </ul>
-      </div>
+  
+        </div>>
       </header>
         <!--end to header-->
 
@@ -197,34 +208,33 @@
     <!--JS Files-->  
     <script>
 
-      const searchInput = document.getElementById('search-input');
-          const searchIcon = document.getElementById('search-icon');
-          const suggestionList = document.getElementById('suggestion-list');
-      
-          function showSuggestions() {
-              suggestionList.style.display = 'block';
-          }
-      
-          function hideSuggestions() {
-              suggestionList.style.display = 'none';
-          }
-      
-          searchInput.addEventListener('focus', showSuggestions);
-          searchInput.addEventListener('blur', hideSuggestions);
-      
-          searchIcon.addEventListener('click', showSuggestions);
-      
-          searchInput.addEventListener('keydown', function(event) {
-              if (event.key === 'Enter') {
-                  event.preventDefault(); // Prevent form submission
-                  window.location.href = 'shop-viewer.html';
-              }
-          });
-      
-          // Prevent hiding when clicking on the suggestion list
-          suggestionList.addEventListener('mousedown', function(event) {
-              event.preventDefault();
-          });
+let select = document.getElementById("select");
+let list = document.getElementById("dropdown-list");
+let selectText = document.getElementById("selectText");
+let inputfield = document.getElementById("inputfield");
+let options = document.getElementsByClassName("options");
+let searchIcon = document.getElementById("search-icon");
+
+select.onclick = function() {
+    list.classList.toggle("open");
+};
+
+for (let option of options) {
+    option.onclick = function() {
+        selectText.innerHTML = this.innerHTML;
+        inputfield.placeholder = "Search In " + selectText.innerHTML;
+    }
+}
+
+inputfield.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        window.location.href = "shop.html";
+    }
+});
+
+searchIcon.onclick = function() {
+    window.location.href = "shop.html";
+};
         </script>
       
 

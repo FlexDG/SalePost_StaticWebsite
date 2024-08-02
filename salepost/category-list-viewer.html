@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Synrok - Mobile HTML Template</title>
+    <title>SalePost- Mobile Version</title>
 
     <!-- Plugins -->
     <link rel="stylesheet" type="text/css" href="assets/plugins/metismenu/metisMenu.min.css" />
@@ -39,9 +39,8 @@
           
           <div class="nav-button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidenav"><a href="javascript:;"><i
                 class="bi bi-list"></i></a></div>
-                <!-- <div class="nav-button" onclick="history.back()"><a href="javascript:;"><i class="bi bi-arrow-left"></i></a></div> -->
-                <div class="nav-button" onclick="history.back()"><a href="javascript:;"><i class="bi bi-arrow-left"></i></a></div>
-          <div class="brand-logo"><a href="javascript:;"><img src="assets/images/logo.png" width="145" alt=""></a></div>
+               
+          <div class="brand-logo"><a href="home-viewer.html"><img src="assets/images/logo.png" width="145" alt=""></a></div>
           <ul class="navbar-nav ms-auto d-flex align-items-center top-right-menu">
             <li class="nav-item">
               <a class="nav-link" href="wishlist.html"><i class="bi bi-heart"></i></a>
@@ -59,18 +58,28 @@
         </nav>
         <div class="search-container">
           <div class="search-bar">
-              <input type="text" id="search-input" placeholder="Search...">
-              <i class="bi bi-search" id="search-icon"></i>
+            <div id="select">
+              <p id="selectText"> All Categories</p>
+              <i class="bi bi-arrow-down text-white"></i>
+              <!-- <img src="assets/images/icons/arrow-down.png" alt=""> -->
+              <ul id="dropdown-list">
+                <li class="options">All Categories</li>
+                <li class="options">Electronics</li>
+                <li class="options">Furniture</li>
+                <li class="options">Sports</li>
+                <li class="options">Fashion</li>
+                <li class="options">Jewelry</li>
+                <li class="options">Literature</li>
+                <li class="options">Community</li>
+                <li class="options">Pets</li>
+                <li class="options">Vehicles</li>
+              </ul>
+            </div>
+            <input type="text" id="inputfield" placeholder="Search...">
+            <i class="bi bi-search" id="search-icon"></i>
           </div>
-          <a href="#offcanvasFilter" data-bs-toggle="offcanvas"> 
-              <i class="bi bi-filter filter-icon"></i>
-          </a>
-          <ul class="suggestion-list" id="suggestion-list">
-              <li><a href="shop-viewer.html">Clothing and Jewelry</a></li>
-              <li><a href="category2.html">Cars & Vehicles</a></li>
-              <li><a href="category3.html">Community</a></li>
-          </ul>
-      </div>
+  
+        </div>
       </header>
         <!--end to header-->
 
@@ -102,10 +111,10 @@
                   <div class="card-body">
                      <div class="d-flex flex-column flex-column-reverse align-items-center justify-content-between gap-2">
                         <div class="category-name">
-                          <h6 class="mb-0 fw-bold text-dark">Vehicles</h6> 
+                          <h6 class="mb-0 fw-bold text-dark">Electronics</h6> 
                         </div>
                         <div class="category-img">
-                          <img src="https://via.placeholder.com/551X551" class="img-fluid rounded-circle" width="100" alt=""/>
+                          <img src="assets/images/icons/technology.png" class="img-fluid rounded-circle" width="100" alt=""/>
                          </div>
                      </div>
                   </div>
@@ -118,10 +127,10 @@
                   <div class="card-body">
                      <div class="d-flex flex-column flex-column-reverse align-items-center justify-content-between gap-2">
                         <div class="category-name">
-                          <h6 class="mb-0 fw-bold text-dark">Jewelry</h6>
+                          <h6 class="mb-0 fw-bold text-dark">Furniture</h6>
                         </div>
                         <div class="category-img">
-                          <img src="https://via.placeholder.com/551X551" class="img-fluid rounded-circle" width="100" alt=""/>
+                          <img src="assets/images/icons/furniture.png" class="img-fluid rounded-circle" width="100" alt=""/>
                          </div>
                      </div>
                   </div>
@@ -134,10 +143,10 @@
                   <div class="card-body">
                      <div class="d-flex flex-column flex-column-reverse align-items-center justify-content-between gap-2">
                         <div class="category-name">
-                          <h6 class="mb-0 fw-bold text-dark">Electronics</h6>
+                          <h6 class="mb-0 fw-bold text-dark">Sports</h6>
                         </div>
                         <div class="category-img">
-                          <img src="https://via.placeholder.com/551X551" class="img-fluid rounded-circle" width="100" alt=""/>
+                          <img src="assets/images/icons/sports-icon.png" class="img-fluid rounded-circle" width="100" alt=""/>
                          </div>
                      </div>
                   </div>
@@ -150,16 +159,65 @@
                   <div class="card-body">
                      <div class="d-flex flex-column flex-column-reverse align-items-center justify-content-between gap-2">
                         <div class="category-name">
-                          <h6 class="mb-0 fw-bold text-dark">Furniture</h6>
+                          <h6 class="mb-0 fw-bold text-dark">Fashion</h6>
                         </div>
                         <div class="category-img">
-                          <img src="https://via.placeholder.com/551X551" class="img-fluid rounded-circle" width="100" alt=""/>
+                          <img src="assets/images/icons/jacket-icon1.png" class="img-fluid rounded-circle" width="100" alt=""/>
                          </div>
                      </div>
                   </div>
                 </div>
                 </a>
               </div>
+              <div class="col">
+                <a href="shop-viewer.html">
+                <div class="card rounded-3 mb-0">
+                  <div class="card-body">
+                     <div class="d-flex flex-column flex-column-reverse align-items-center justify-content-between gap-2">
+                        <div class="category-name">
+                          <h6 class="mb-0 fw-bold text-dark">Jewelry</h6>
+                        </div>
+                        <div class="category-img">
+                          <img src="assets/images/icons/jewelry-icon.png" class="img-fluid rounded-circle" width="100" alt=""/>
+                         </div>
+                     </div>
+                  </div>
+                </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="shop-viewer.html">
+                <div class="card rounded-3 mb-0">
+                  <div class="card-body">
+                     <div class="d-flex flex-column flex-column-reverse align-items-center justify-content-between gap-2">
+                        <div class="category-name">
+                          <h6 class="mb-0 fw-bold text-dark">Literature</h6>
+                        </div>
+                        <div class="category-img">
+                          <img src="assets/images/icons/literature-icon.png" class="img-fluid rounded-circle" width="100" alt=""/>
+                         </div>
+                     </div>
+                  </div>
+                </div>
+                </a>
+              </div>
+              <div class="col">
+                <a href="shop-viewer.html">
+                <div class="card rounded-3 mb-0">
+                  <div class="card-body">
+                     <div class="d-flex flex-column flex-column-reverse align-items-center justify-content-between gap-2">
+                        <div class="category-name">
+                          <h6 class="mb-0 fw-bold text-dark">Community</h6>
+                        </div>
+                        <div class="category-img">
+                          <img src="assets/images/icons/assorted-icon.png" class="img-fluid rounded-circle" width="100" alt=""/>
+                         </div>
+                     </div>
+                  </div>
+                </div>
+                </a>
+              </div>
+
               <div class="col">
                 <a href="shop-viewer.html">
                 <div class="card rounded-3 mb-0">
@@ -169,7 +227,7 @@
                           <h6 class="mb-0 fw-bold text-dark">Pets</h6>
                         </div>
                         <div class="category-img">
-                          <img src="https://via.placeholder.com/551X551" class="img-fluid rounded-circle" width="100" alt=""/>
+                          <img src="assets/images/icons/pet-icon.png" class="img-fluid rounded-circle" width="100" alt=""/>       <img src="" class="img-fluid rounded-circle" width="100" alt=""/>
                          </div>
                      </div>
                   </div>
@@ -182,26 +240,10 @@
                   <div class="card-body">
                      <div class="d-flex flex-column flex-column-reverse align-items-center justify-content-between gap-2">
                         <div class="category-name">
-                          <h6 class="mb-0 fw-bold text-dark">Accessories</h6>
+                          <h6 class="mb-0 fw-bold text-dark">Vehicles</h6>
                         </div>
                         <div class="category-img">
-                          <img src="https://via.placeholder.com/551X551" class="img-fluid rounded-circle" width="100" alt=""/>
-                         </div>
-                     </div>
-                  </div>
-                </div>
-                </a>
-              </div>
-              <div class="col">
-                <a href="shop-viewer.html">
-                <div class="card rounded-3 mb-0">
-                  <div class="card-body">
-                     <div class="d-flex flex-column flex-column-reverse align-items-center justify-content-between gap-2">
-                        <div class="category-name">
-                          <h6 class="mb-0 fw-bold text-dark">Sports</h6>
-                        </div>
-                        <div class="category-img">
-                          <img src="https://via.placeholder.com/551X551" class="img-fluid rounded-circle" width="100" alt=""/>
+                          <img src="assets/images/icons/vehicle-icon.png" class="img-fluid rounded-circle" width="100" alt=""/>
                          </div>
                      </div>
                   </div>
@@ -317,34 +359,33 @@
 
     <script>
     
-      const searchInput = document.getElementById('search-input');
-      const searchIcon = document.getElementById('search-icon');
-      const suggestionList = document.getElementById('suggestion-list');
-  
-      function showSuggestions() {
-          suggestionList.style.display = 'block';
-      }
-  
-      function hideSuggestions() {
-          suggestionList.style.display = 'none';
-      }
-  
-      searchInput.addEventListener('focus', showSuggestions);
-      searchInput.addEventListener('blur', hideSuggestions);
-  
-      searchIcon.addEventListener('click', showSuggestions);
-  
-      searchInput.addEventListener('keydown', function(event) {
-          if (event.key === 'Enter') {
-              event.preventDefault(); // Prevent form submission
-              window.location.href = 'shop-viewer.html';
-          }
-      });
-  
-      // Prevent hiding when clicking on the suggestion list
-      suggestionList.addEventListener('mousedown', function(event) {
-          event.preventDefault();
-      });
+    let select = document.getElementById("select");
+let list = document.getElementById("dropdown-list");
+let selectText = document.getElementById("selectText");
+let inputfield = document.getElementById("inputfield");
+let options = document.getElementsByClassName("options");
+let searchIcon = document.getElementById("search-icon");
+
+select.onclick = function() {
+    list.classList.toggle("open");
+};
+
+for (let option of options) {
+    option.onclick = function() {
+        selectText.innerHTML = this.innerHTML;
+        inputfield.placeholder = "Search In " + selectText.innerHTML;
+    }
+}
+
+inputfield.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        window.location.href = "shop-viewer.html";
+    }
+});
+
+searchIcon.onclick = function() {
+    window.location.href = "shop-viewer.html";
+};
   
   </script>
 

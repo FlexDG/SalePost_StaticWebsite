@@ -1,0 +1,202 @@
+# Query: synrok
+# ContextLines: 1
+
+40 results - 40 files
+
+salepost\about-us-viewer.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:        <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\about-us.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:         <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\addresses.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:         <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\authentication-change-password.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:        <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\authentication-log-in.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:         <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\authentication-otp-varification.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:       <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\authentication-sign-up.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:        <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\authentication-splash-2.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:       <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\category-list-viewer.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:         <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\category-list.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:     <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\chat-inbox.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:         <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\checkout.html:
+  6    <meta name="viewport" content="width=device-width, initial-scale=1">
+  7:       <title>SalePost- Mobile Version</title>
+  8  
+
+salepost\contact-us-viewer.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:        <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\contact-us.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:        <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\coupons.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:        <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\deals-viewer.html:
+  6    <meta name="viewport" content="width=device-width, initial-scale=1">
+  7:      <title>SalePost- Mobile Version</title>
+  8  
+
+salepost\deals.html:
+  6    <meta name="viewport" content="width=device-width, initial-scale=1">
+  7:    <title>SalePost- Mobile Version</title>
+  8  
+
+salepost\message-box.html:
+  6    <meta name="viewport" content="width=device-width, initial-scale=1">
+  7:      <title>SalePost- Mobile Version</title>
+  8  
+
+salepost\my-orders.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:      <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\my-profile.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:       <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\notification.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:      <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\order-tracking.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:      <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\payment-completed.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:         <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\payment-error.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:       <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\payment-method.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:       <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\product-details-viewer.html:
+  6    <meta name="viewport" content="width=device-width, initial-scale=1">
+  7:     <title>SalePost- Mobile Version</title>
+  8  
+
+salepost\product-details.html:
+  6    <meta name="viewport" content="width=device-width, initial-scale=1">
+  7:     <title>SalePost- Mobile Version</title>
+  8  
+
+salepost\profile.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6    <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\reviews-and-ratings-viewer.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:       <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\reviews-and-ratings.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:       <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\shop-viewer.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:      <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\shop.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:       <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\splash-1.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:      <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\store-products-viewer.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:       <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\store-products.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\stores-list-viewer.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:     <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\stores-list.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:       <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\wishlist.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6    <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\write-a-review.html:
+  5      <meta name="viewport" content="width=device-width, initial-scale=1">
+  6:     <title>SalePost- Mobile Version</title>
+  7  
+
+salepost\assets\css\style.css:
+

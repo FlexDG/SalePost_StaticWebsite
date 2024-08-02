@@ -22,10 +22,17 @@
 
 <body>
 
+  <div class="cookie-popup" id="cookiePopup">
+    <p>We use cookies to improve your experience on our site. By continuing, you accept our use of cookies.</p>
+    <div class="cookie-buttons">
+        <button class="accept" onclick="acceptCookies()">Accept</button>
+        <button class="reject" onclick="rejectCookies()">Reject</button>
+    </div>
+</div>
 
 
   <!--Popup-->
-  <div class="popup">
+  <!-- <div class="popup">
     <div class="contentBox">
       <div class="close"></div>
       <div class="imgBx">
@@ -40,7 +47,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!--page loader-->
   <div class="loader-wrapper">
@@ -62,7 +69,7 @@
               class="bi bi-list"></i></a></div>
         <div class="brand-logo"><a href="javascript:;"><img src="assets/images/logo.png" width="145" alt=""></a></div>
         <ul class="navbar-nav ms-auto d-flex align-items-center top-right-menu">
-      
+
           <li class="nav-item">
             <a class="nav-link" href="authentication-log-in.html"><i class="bi bi-heart"></i></a>
           </li>
@@ -80,28 +87,52 @@
       </nav>
       <div class="search-container">
         <div class="search-bar">
-            <input type="text" id="search-input" placeholder="Search...">
-            <i class="bi bi-search" id="search-icon"></i>
+          <div id="select">
+            <p id="selectText"> All Categories</p>
+            <i class="bi bi-arrow-down text-white"></i>
+            <!-- <img src="assets/images/icons/arrow-down.png" alt=""> -->
+            <ul id="dropdown-list">
+              <li class="options">All Categories</li>
+              <li class="options">Electronics</li>
+              <li class="options">Furniture</li>
+              <li class="options">Sports</li>
+              <li class="options">Fashion</li>
+              <li class="options">Jewelry</li>
+              <li class="options">Literature</li>
+              <li class="options">Community</li>
+              <li class="options">Pets</li>
+              <li class="options">Vehicles</li>
+            </ul>
+          </div>
+          <input type="text" id="inputfield" placeholder="Search...">
+          <i class="bi bi-search" id="search-icon"></i>
         </div>
-        <a href="#offcanvasFilter" data-bs-toggle="offcanvas"> 
-            <i class="bi bi-filter filter-icon"></i>
-        </a>
-        <ul class="suggestion-list" id="suggestion-list">
-            <li><a href="shop-viewer.html">Clothing and Jewelry</a></li>
-            <li><a href="category2.html">Cars & Vehicles</a></li>
-            <li><a href="category3.html">Community</a></li>
-        </ul>
-    </div>
+
+      </div>
     </header>
     <!--end to header-->
 
     <!--start to page content-->
-    <div class="page-content">
+    <div class="page-content-2">
+
+      <div class="home-video-banner-container">
+ 
+        <video autoplay loop muted plays-inlinie class="home-video-clip">
+          <source src="assets/videos/banner-vid/home-banner-video.mp4" type="video/mp4">
+        </video>
+
+        <div class="video-banner-text">
+          <h3>Buy, Sell</h3>
+          <h3>and SalePost</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="overlay"></div>
+      </div>
 
 
       <div class="py-2"></div>
       <!--start banner slider-->
-
+      <!-- 
       <div class="banner-slider">
         <div class="banner-item">
           <a href="shop-viewer.html"><img src="assets/images/banner-sliders/laptop.png" class="img-fluid rounded-3" alt=""></a>
@@ -119,9 +150,14 @@
         <div class="banner-item">
           <a href="shop-viewer.html"><img src="assets/images/banner-sliders/06.webp" class="img-fluid rounded-3" alt=""></a>
         </div>
-      </div>
+      </div> -->
 
       <!--end banner slider-->
+
+      <!--start video banner -->
+
+      <!--end video banner -->
+
 
       <!--start category-->
       <div class="category">
@@ -134,64 +170,24 @@
               <figcaption>Clothes</figcaption>
             </figure>
           </div>
-       
+
           <div class="category-img">
             <figure>
               <a href="shop-viewer.html">
-                <img src="assets/images/icons/bag-icon1.png" class="img-fluid-3 rounded-circle-2" alt="">
+                <img src="assets/images/icons/technology.png" class="img-fluid-3 rounded-circle-2" alt="">
               </a>
               <figcaption>Electronics</figcaption>
             </figure>
           </div>
-          
-          <div class="category-img">
-            <figure>
-              <a href="shop-viewer.html">
-                <img src="assets/images/icons/shoes-icon1.png" class="img-fluid-3 rounded-circle-2" alt="">
-              </a>
-              <figcaption>Vehicles</figcaption>
-            </figure>
-          </div>
-          <div class="category-img">
-            <figure>
-              <a href="shop-viewer.html">
-                <img src="assets/images/icons/assorted-icon.png" class="img-fluid-3 rounded-circle-2" alt="">
-              </a>
-              <figcaption>Jewelry</figcaption>
-            </figure>
-          </div>
 
-        </div>
-      </div>
-      <div class="category-2">
-        <div class="d-flex align-items-center gap-3 justify-content-between">
           <div class="category-img">
             <figure>
               <a href="shop-viewer.html">
-
-                <img src="assets/images/icons/technology.png" class="img-fluid-3 rounded-circle-2" alt="">
-              </a>
-              <figcaption>Pets</figcaption>
-            </figure>
-          </div>
-          <div class="category-img">
-            <figure>
-              <a href="shop-viewer.html">
-
                 <img src="assets/images/icons/furniture.png" class="img-fluid-3 rounded-circle-2" alt="">
-              </a>
-              <figcaption>Accessories</figcaption>
-            </figure>
-          </div>
-          <div class="category-img">
-            <figure>
-              <a href="shop-viewer.html">
-                <img src="assets/images/icons/accessory-icon1.png" class="img-fluid-3 rounded-circle-2" alt="">
               </a>
               <figcaption>Furniture</figcaption>
             </figure>
           </div>
-    
           <div class="category-img">
             <figure>
               <a href="category-list-viewer.html">
@@ -204,20 +200,20 @@
         </div>
       </div>
 
+
       <!--end category-->
 
       <div class="py-2"></div>
-      
+
 
       <div class="sales-category-wrapper">
         <h4 class="my-2 text-start fw-bold section-title">Best Sellers</h4>
         <div class="sales-category-slider">
           <div class="card rounded-0 rounded-3 overflow-hidden">
-           <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon float-right-2"></i></a>
-           <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon float-right"></i></a>
+            <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon float-right-2"></i></a>
+            <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon float-right"></i></a>
 
-           <a href="product-details-viewer.html"><img src="assets/images/other/01.png" class="img-fluid-2"
-                alt=""></a>
+            <a href="product-details-viewer.html"><img src="assets/images/other/01.png" class="img-fluid-2" alt=""></a>
 
             <div class="card-body text-start">
               <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
@@ -234,7 +230,8 @@
             <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon float-right-2"></i></a>
             <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon float-right"></i></a>
 
-            <a href="product-details-viewer.html"><img src="assets/images/trending-shoes/02.webp" class="img-fluid-2" alt=""></a>
+            <a href="product-details-viewer.html"><img src="assets/images/trending-shoes/02.webp" class="img-fluid-2"
+                alt=""></a>
             <div class="card-body text-start">
               <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
               <div class="price-rating d-flex justify-content-between align-items-center">
@@ -266,7 +263,8 @@
             <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon float-right-2"></i></a>
             <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon float-right"></i></a>
 
-            <a href="product-details-viewer.html"><img src="assets/images/accessories/02.webp" class="img-fluid-2" alt=""></a>
+            <a href="product-details-viewer.html"><img src="assets/images/accessories/02.webp" class="img-fluid-2"
+                alt=""></a>
             <div class="card-body text-start">
               <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
               <div class="price-rating d-flex justify-content-between align-items-center">
@@ -283,7 +281,8 @@
             <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon float-right-2"></i></a>
             <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon float-right"></i></a>
 
-            <a href="product-details-viewer.html"><img src="assets/images/similar/05.webp" class="img-fluid-2" alt=""></a>
+            <a href="product-details-viewer.html"><img src="assets/images/similar/05.webp" class="img-fluid-2"
+                alt=""></a>
             <div class="card-body text-start">
               <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
               <div class="price-rating d-flex justify-content-between align-items-center">
@@ -300,7 +299,8 @@
             <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon float-right-2"></i></a>
             <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon float-right"></i></a>
 
-            <a href="product-details-viewer.html"><img src="assets/images/similar/01.webp" class="img-fluid-2" alt=""></a>
+            <a href="product-details-viewer.html"><img src="assets/images/similar/01.webp" class="img-fluid-2"
+                alt=""></a>
             <div class="card-body text-start">
               <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
               <div class="price-rating d-flex justify-content-between align-items-center">
@@ -321,42 +321,42 @@
         <div class="brands-slider">
           <div class="card rounded-3">
             <div class="card-body">
-              <img src="assets/images/brands/01.webp" class="img-fluid" alt=""> 
+              <img src="assets/images/brands/01.webp" class="img-fluid" alt="">
             </div>
           </div>
           <div class="card rounded-3">
             <div class="card-body">
-           <img src="assets/images/brands/02.webp" class="img-fluid" alt=""> 
+              <img src="assets/images/brands/02.webp" class="img-fluid" alt="">
             </div>
           </div>
           <div class="card rounded-3">
             <div class="card-body">
-             <img src="assets/images/brands/03.webp" class="img-fluid" alt=""> 
+              <img src="assets/images/brands/03.webp" class="img-fluid" alt="">
             </div>
           </div>
           <div class="card rounded-3">
             <div class="card-body">
-            <img src="assets/images/brands/04.webp" class="img-fluid" alt=""> 
+              <img src="assets/images/brands/04.webp" class="img-fluid" alt="">
             </div>
           </div>
           <div class="card rounded-3">
             <div class="card-body">
-             <img src="assets/images/brands/05.webp" class="img-fluid" alt=""> 
+              <img src="assets/images/brands/05.webp" class="img-fluid" alt="">
             </div>
           </div>
           <div class="card rounded-3">
             <div class="card-body">
-              <img src="assets/images/brands/06.webp" class="img-fluid" alt=""> 
+              <img src="assets/images/brands/06.webp" class="img-fluid" alt="">
             </div>
           </div>
           <div class="card rounded-3">
             <div class="card-body">
-             <img src="assets/images/brands/07.webp" class="img-fluid" alt=""> 
+              <img src="assets/images/brands/07.webp" class="img-fluid" alt="">
             </div>
           </div>
           <div class="card rounded-3">
             <div class="card-body">
-           <img src="assets/images/brands/08.webp" class="img-fluid" alt=""> 
+              <img src="assets/images/brands/08.webp" class="img-fluid" alt="">
             </div>
           </div>
 
@@ -388,7 +388,8 @@
             <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon float-right-2"></i></a>
             <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon float-right"></i></a>
 
-            <a href="product-details-viewer.html"><img src="assets/images/trending/04.webp" class="img-fluid-2" alt=""></a>
+            <a href="product-details-viewer.html"><img src="assets/images/trending/04.webp" class="img-fluid-2"
+                alt=""></a>
             <div class="card-body text-start">
               <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
               <div class="price-rating d-flex justify-content-between align-items-center">
@@ -419,7 +420,8 @@
           <div class="card rounded-0 rounded-3 overflow-hidden">
             <a href="authentication-log-in.html"><i class="bi bi-heart wishlist-icon float-right-2"></i></a>
             <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon float-right"></i></a>
-            <a href="product-details-viewer.html"><img src="assets/images/accessories/02.webp" class="img-fluid-2" alt=""></a>
+            <a href="product-details-viewer.html"><img src="assets/images/accessories/02.webp" class="img-fluid-2"
+                alt=""></a>
             <div class="card-body text-start">
               <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
               <div class="price-rating d-flex justify-content-between align-items-center">
@@ -436,7 +438,8 @@
             <a href="authentication-log-in.html"><i class="bi bi-heart wishlist-icon float-right-2"></i></a>
             <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon float-right"></i></a>
 
-            <a href="product-details-viewer.html"><img src="assets/images/similar/05.webp" class="img-fluid-2" alt=""></a>
+            <a href="product-details-viewer.html"><img src="assets/images/similar/05.webp" class="img-fluid-2"
+                alt=""></a>
             <div class="card-body text-start">
               <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
               <div class="price-rating d-flex justify-content-between align-items-center">
@@ -453,7 +456,8 @@
             <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon float-right-2"></i></a>
             <a href="shop-viewer.html"><i class="bi bi-cart-plus homepage-buy-icon float-right"></i></a>
 
-            <a href="product-details-viewer.html"><img src="assets/images/similar/01.webp" class="img-fluid-2" alt=""></a>
+            <a href="product-details-viewer.html"><img src="assets/images/similar/01.webp" class="img-fluid-2"
+                alt=""></a>
             <div class="card-body text-start">
               <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
               <div class="price-rating d-flex justify-content-between align-items-center">
@@ -473,7 +477,7 @@
         <div class="banner-item">
           <h4 class="my-2 text-start fw-bold section-title">Flash Deals</h4>
           <a href="deals.html"><button class="btn banner-btn-ecomm">Shop Now</button></a>
-         <img src="assets/images/banner-sliders/02.webp" class="img-fluid rounded-3" alt=""> 
+          <img src="assets/images/banner-sliders/02.webp" class="img-fluid rounded-3" alt="">
         </div>
       </div>
 
@@ -511,7 +515,8 @@
               <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
               <a href="shop-viewer.html"> <i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
 
-              <a href="product-details-viewer.html"><img src="assets/images/trending/06.webp" class="img-fluid" alt=""></a>
+              <a href="product-details-viewer.html"><img src="assets/images/trending/06.webp" class="img-fluid"
+                  alt=""></a>
 
               <div class="card-body text-start">
                 <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
@@ -529,9 +534,10 @@
           <div class="col d-flex">
             <div class="card rounded-0 w-100 rounded-3 overflow-hidden">
               <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
-              <a href="shop-viewer.html">  <i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
+              <a href="shop-viewer.html"> <i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
 
-              <a href="product-details-viewer.html"><img src="assets/images/accessories/03.webp" class="img-fluid" alt=""></a>
+              <a href="product-details-viewer.html"><img src="assets/images/accessories/03.webp" class="img-fluid"
+                  alt=""></a>
 
               <div class="card-body text-start">
                 <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
@@ -571,7 +577,8 @@
               <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
               <a href="shop-viewer.html"> <i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
 
-              <a href="product-details-viewer.html"><img src="assets/images/similar/05.webp" class="img-fluid" alt=""></a>
+              <a href="product-details-viewer.html"><img src="assets/images/similar/05.webp" class="img-fluid"
+                  alt=""></a>
 
               <div class="card-body text-start">
                 <p class="mb-0 fw-bold text-start product-card-header">Lorem ipsum dolor sit amet.</p>
@@ -589,7 +596,7 @@
           <div class="col d-flex">
             <div class="card rounded-0 w-100 rounded-3 overflow-hidden">
               <a href="authentication-log-in.html"> <i class="bi bi-heart wishlist-icon-2 float-right-2"></i></a>
-              <a href="shop-viewer.html">  <i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
+              <a href="shop-viewer.html"> <i class="bi bi-cart-plus homepage-buy-icon-2 float-right"></i></a>
 
               <a href="product-details-viewer.html"><img src="assets/images/shop/08.webp" class="img-fluid" alt=""></a>
               <div class="card-body text-start">
@@ -608,7 +615,7 @@
 
         </div>
       </div>
-       
+
 
     </div>
     <!--end to page content-->
@@ -630,12 +637,12 @@
               <div class="name">Notifications</div>
             </div>
           </a>
-          <!-- <a class="nav-link" href="authentication-log-in.html">
+          <a class="nav-link" href="authentication-log-in.html">
             <div class="d-flex flex-column align-items-center">
               <div class="icon"><i class="bi bi-bag"></i></div>
               <div class="name">Cart</div>
             </div>
-          </a> -->
+          </a>
           <a class="nav-link" href="authentication-log-in.html">
             <div class="d-flex flex-column align-items-center">
               <div class="icon"><i class="bi bi-inbox"></i></div>
@@ -999,7 +1006,7 @@
         <div class="hstack align-items-center justify-content-center w-100 align-items-stretch">
           <div class="short-by w-100 d-flex align-items-center justify-content-center">
             <a href="javascript:;" data-bs-dismiss="offcanvas" class="btn bg-transparent btn-ecomm-shop"><i
-                  class="bi bi-x-lg me-3"></i>Close</a>
+                class="bi bi-x-lg me-3"></i>Close</a>
           </div>
           <div class="vr"></div>
           <div class="filter-btn bg-default w-100 d-flex align-items-center justify-content-center">
@@ -1009,6 +1016,25 @@
       </div>
     </div>
     <!--end filter offcanvas-->
+
+
+
+
+    <div class="offcanvas offcanvas-bottom h-auto" tabindex="-1" id="offcanvasSortBy">
+      <div class="offcanvas-header border-bottom justify-content-center">
+        <h6 class="offcanvas-title mb-0 fw-bold text-uppercase text-dark">Sort By</h6>
+      </div>
+      <div class="offcanvas-body p-0">
+        <div class="dropdown">
+          <button class="dropdown-button" onclick="toggleDropdown()">Select Option</button>
+          <ul class="dropdown-menu" id="dropdown-menu">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <!--start sidenav-->
     <div class="sidenav">
@@ -1095,14 +1121,14 @@
               </li>
               <li>
                 <a href="contact-us-viewer.html">
-                   <i class="bi bi-headphones me-2"></i>
-                   Contact Us
-                 </a>
+                  <i class="bi bi-headphones me-2"></i>
+                  Contact Us
+                </a>
               </li>
             </ul>
           </nav>
         </div>
-  
+
       </div>
     </div>
     <!--end sidenav-->
@@ -1112,37 +1138,59 @@
 
   <!--JS Files-->
   <script>
-    
-        const searchInput = document.getElementById('search-input');
-        const searchIcon = document.getElementById('search-icon');
-        const suggestionList = document.getElementById('suggestion-list');
+document.addEventListener('DOMContentLoaded', function() {
+        const cookiePopup = document.getElementById('cookiePopup');
+        const cookieConsent = localStorage.getItem('cookieConsent');
 
-        function showSuggestions() {
-            suggestionList.style.display = 'block';
+        if (!cookieConsent) {
+            setTimeout(() => {
+                cookiePopup.style.display = 'block';
+            }, 2000); 
         }
+    });
 
-        function hideSuggestions() {
-            suggestionList.style.display = 'none';
-        }
+    function acceptCookies() {
+        localStorage.setItem('cookieConsent', 'accepted');
+        document.getElementById('cookiePopup').style.display = 'none';
+    }
 
-        searchInput.addEventListener('focus', showSuggestions);
-        searchInput.addEventListener('blur', hideSuggestions);
+    function rejectCookies() {
+        localStorage.setItem('cookieConsent', 'rejected');
+        document.getElementById('cookiePopup').style.display = 'none';
+    }
 
-        searchIcon.addEventListener('click', showSuggestions);
+    function resetCookieConsent() {
+        localStorage.removeItem('cookieConsent');
+    }
 
-        searchInput.addEventListener('keydown', function(event) {
-            if (event.key === 'Enter') {
-                event.preventDefault(); // Prevent form submission
-                window.location.href = 'shop-viewer.html';
-            }
-        });
+let select = document.getElementById("select");
+let list = document.getElementById("dropdown-list");
+let selectText = document.getElementById("selectText");
+let inputfield = document.getElementById("inputfield");
+let options = document.getElementsByClassName("options");
+let searchIcon = document.getElementById("search-icon");
 
-        // Prevent hiding when clicking on the suggestion list
-        suggestionList.addEventListener('mousedown', function(event) {
-            event.preventDefault();
-        });
- 
-</script>
+select.onclick = function() {
+    list.classList.toggle("open");
+};
+
+for (let option of options) {
+    option.onclick = function() {
+        selectText.innerHTML = this.innerHTML;
+        inputfield.placeholder = "Search In " + selectText.innerHTML;
+    }
+}
+
+inputfield.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        window.location.href = "shop-viewer.html";
+    }
+});
+
+searchIcon.onclick = function() {
+    window.location.href = "shop-viewer.html";
+};
+  </script>
 
   <script src="assets/js/bootstrap.bundle.min.js"></script>
 
