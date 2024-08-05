@@ -236,6 +236,10 @@
               <label for="consent-checkbox">I consent to receive marketing offers from Salepost</label>
           </div>
           <a href="message-box.html"> <button class="btn btn-ecomm rounded-3 w-100 border-0">message seller</button></a>
+          <div class="seller-number">
+            <i class="bi bi-telephone-fill"></i> <span id="masked-number">**** *** 7890</span>
+            <button id="toggle-number-btn" class="show-number-btn" onclick="toggleNumber()">Show number</button>
+        </div>
       </div>
       <hr class="my-3">
 
@@ -791,6 +795,20 @@
 
   <!--JS Files-->
   <script>
+
+function toggleNumber() {
+        const maskedNumber = document.getElementById('masked-number');
+        const toggleButton = document.getElementById('toggle-number-btn');
+
+        if (toggleButton.textContent === 'Show number') {
+            maskedNumber.textContent = '1234 567 7890'; 
+            toggleButton.textContent = 'Hide number';
+        } else {
+            maskedNumber.textContent = '**** *** 7890';
+            toggleButton.textContent = 'Show number';
+        }
+    }
+
     let moreButtons = document.querySelectorAll('.btn-ecomm-more');
     for (let i = 0; i < moreButtons.length; i++) {
       moreButtons[i].addEventListener('click', function () {

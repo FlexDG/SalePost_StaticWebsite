@@ -1412,6 +1412,48 @@ h6 {
 
 /* extra css */
 
+.seller-number {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.seller-number i{
+   margin-right: 7px;
+   color: #f46444;
+}
+
+.show-number-btn {
+    margin-left: 4px;
+    background: none;
+    border: none;
+    color: #f46444;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.show-number-btn:hover {
+    text-decoration: underline;
+}
+
+
+.modal-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .modal-body img {
+    padding: 5px;
+  }
+
+  .form-check-label-2 {
+    margin-left: 6px;
+  }
+
+  .form-check-label-2 h6 {
+    font-size: 15px;
+    font-weight: 400;
+
+  }
+
 .cookie-popup {
     position: fixed;
     bottom: 80px;
